@@ -37,48 +37,69 @@
       </div>
 
       <h2>Validador de HTML & CSS</h2>
-
-      <form id="fileForm" method="POST">
-        <div class="form-group text-left" id="type1">
-          <label for="fileHTML"
-            >Seleccione el archivo html para el ejercicio</label
-          >
-          <input
-            type="file"
-            class="form-control-file"
-            id="fileHTML"
-            name="fileHTML"
-          />
-        </div>
-        <div class="form-group text-left" id="type2">
-          <label for="fileCSS"
-            >Seleccione el archivo css para el ejercicio</label
-          >
-          <input
-            type="file"
-            class="form-control-file"
-            id="fileCSS"
-            name="fileCSS"
-          />
-        </div>
-        <div class="form-group text-left">
-          <input type="submit" />
-        </div>
-      </form>
-
-      <hr />
-      <div id="results">
-        <h4>Resultado de la validación del HTML</h4>
-        <p id="structureResult"></p>
+      <div id="form-container">
+        <form id="fileForm" method="POST">
+          <div class="form-group text-left" id="formType1">
+            <label for="fileHTML"
+              >Seleccione el archivo html para el ejercicio</label
+            >
+            <input
+              type="file"
+              class="form-control-file"
+              id="fileHTML"
+              name="fileHTML"
+              accept=".html"
+            />
+          </div>
+          <div class="form-group text-left" id="formType2">
+            <label for="fileCSS"
+              >Seleccione el archivo css para el ejercicio</label
+            >
+            <input
+              type="file"
+              class="form-control-file"
+              id="fileCSS"
+              name="fileCSS"
+              accept=".css"
+            />
+          </div>
+          <div class="form-group text-left">
+            <input type="submit" id="submit" disabled />
+          </div>
+        </form>
       </div>
-      <div id="details">
-        <h4>Estructura proporcionada</h4>
-        <div id="source"></div>
-        <h4>Estructura esperada</h4>
-        <div id="target"></div>
-        <h4>Detalle de los errores</h4>
-        <div class="text-left">
-          <ul id="errors"></ul>
+      <hr />
+      <div id="general-errors" class="text-danger"></div>
+
+      <div id="validation-html">
+        <div id="results-html">
+          <h4>Resultado de la validación del HTML</h4>
+          <p id="structureResult-html"></p>
+        </div>
+        <div id="details-html">
+          <h4>Estructura proporcionada</h4>
+          <div id="source"></div>
+          <h4>Estructura esperada</h4>
+          <div id="target"></div>
+          <div id="errors-html" hidden>
+            <h4>Detalle de los errores</h4>
+            <div class="text-left">
+              <ul id="errors-html-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="validation-css">
+        <div id="results-css">
+          <h4>Resultado de la validación del CSS</h4>
+          <p id="structureResult-css"></p>
+        </div>
+        <div id="errors-css" hidden>
+          <h4>Detalle de los errores</h4>
+          <div class="text-left">
+            <ul id="errors-css-list"></ul>
+          </div>
         </div>
       </div>
     </div>

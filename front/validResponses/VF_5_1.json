@@ -1,0 +1,100 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "table",
+                "children": [
+                  {
+                    "tag": "thead",
+                    "children": [
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "th"
+                          },
+                          {
+                            "tag": "th"
+                          },
+                          {
+                            "tag": "th"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tbody",
+                    "children": [
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {}
+}

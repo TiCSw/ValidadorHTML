@@ -2,32 +2,66 @@ const url = new URL(window.location.href);
 const type = url.searchParams.get("type");
 const exercise = url.searchParams.get("exercise");
 
-if (type === "1") {
-  document.getElementById("type2").hidden = true;
+initializeDivs();
+
+function initializeDivs() {
+  if (type === "1") {
+    document.getElementById("formType2").hidden = true;
+  }
+  document.getElementById("validation-html").hidden = true;
+  document.getElementById("validation-css").hidden = true;
+  document.getElementById("details-html").hidden = true;
+  document.getElementById("general-errors").hidden = true;
 }
 
-document.getElementById("results").hidden = true;
-document.getElementById("details").hidden = true;
+document.getElementById("fileForm").onchange = function (event) {
+  event.preventDefault();
+  if (type === "1" && document.getElementById("fileHTML").files.length > 0)
+    document.getElementById("submit").disabled = false;
+
+  if (
+    type === "2" &&
+    document.getElementById("fileHTML").files.length > 0 &&
+    document.getElementById("fileCSS").files.length > 0
+  )
+    document.getElementById("submit").disabled = false;
+};
 
 document.getElementById("fileForm").onsubmit = function (event) {
   event.preventDefault();
+  document.getElementById("form-container").hidden = true;
   const selectedHTMLFile = document.getElementById("fileHTML").files[0];
   const selectedCSSFile = document.getElementById("fileCSS").files[0];
 
-  if (selectedHTMLFile) {
-    processHTML(selectedHTMLFile);
-  }
+  processFiles(selectedHTMLFile, selectedCSSFile);
 };
 
-function processHTML(selectedHTMLFile) {
-  returnFile(selectedHTMLFile, (data) => {
-    let htmlContent = btoa(data);
-    d3.json("treeData.json", (error, htmlStructure) => {
+function returnFileContent(htmlFile, cssFile, callback) {
+  if (htmlFile) {
+    returnFile(htmlFile, (dataHTML) => {
+      if (cssFile) {
+        returnFile(cssFile, (dataCSS) => {
+          callback(dataHTML, dataCSS);
+        });
+      } else {
+        callback(dataHTML, "");
+      }
+    });
+  } else {
+    callback("", "");
+  }
+}
+
+function processFiles(selectedHTMLFile, selectedCSSFile) {
+  returnFileContent(selectedHTMLFile, selectedCSSFile, (dataHTML, dataCSS) => {
+    let htmlContent = btoa(dataHTML);
+    let cssContent = btoa(dataCSS);
+    d3.json(`./validResponses/${exercise}.json`, (error, data) => {
       const payload = {
         htmlContent,
-        htmlStructure,
-        cssContent: "",
-        cssStructure: {},
+        htmlStructure: data.htmlStructure,
+        cssContent,
+        cssStructure: data.cssStructure,
       };
       fetch("http://localhost:3001", {
         method: "POST",
@@ -38,14 +72,19 @@ function processHTML(selectedHTMLFile) {
       })
         .then((res) => res.json())
         .catch((error) => {
-          document.getElementById("results").hidden = false;
+          document.getElementById("general-errors").hidden = false;
           document.getElementById(
-            "structureResult"
+            "general-errors"
           ).innerHTML = `Ocurrió un error durante la validación: ${error}`;
         })
         .then((res) => {
           console.log(res.differencesHTML);
-          renderResponse(res.isHtmlValid, res.differencesHTML);
+          renderResponse(
+            res.isHtmlValid,
+            res.differencesHTML,
+            res.isCSSValid,
+            res.differencesCSS
+          );
           drawTree(res.htmlInputStructure, "#source");
           drawTree(res.htmlExpectedStructure, "#target");
         });
@@ -64,18 +103,43 @@ function returnFile(file, callback) {
   };
 }
 
-function renderResponse(isValid, differences) {
-  document.getElementById("results").hidden = false;
-  if (isValid) {
-    document.getElementById("structureResult").innerHTML =
+function renderResponse(
+  isHtmlValid,
+  differencesHTML,
+  isCSSValid,
+  differencesCSS
+) {
+  document.getElementById("validation-html").hidden = false;
+  if (type === "2") {
+    document.getElementById("validation-css").hidden = false;
+  }
+  if (isHtmlValid) {
+    document.getElementById("structureResult-html").innerHTML =
       "La estructura del archivo html proporcionado es válida";
-    document.getElementById("structureResult").className = "text-success";
+    document.getElementById("structureResult-html").className = "text-success";
   } else {
-    document.getElementById("details").hidden = false;
-    document.getElementById("structureResult").innerHTML =
+    document.getElementById("details-html").hidden = false;
+    document.getElementById("errors-html").hidden = false;
+    document.getElementById("structureResult-html").innerHTML =
       "La estructura del archivo html proporcionado no es válida";
-    document.getElementById("structureResult").className = "text-danger";
-    document.getElementById("errors").innerHTML = differences
+    document.getElementById("structureResult-html").className = "text-danger";
+
+    document.getElementById("errors-html-list").innerHTML = differencesHTML
+      .map((e) => `<li>${e}</li>`)
+      .join("");
+  }
+
+  if (isCSSValid) {
+    document.getElementById("structureResult-css").innerHTML =
+      "La estructura del archivo css proporcionado es válida";
+    document.getElementById("structureResult-css").className = "text-success";
+  } else {
+    document.getElementById("errors-css").hidden = false;
+    document.getElementById("structureResult-css").innerHTML =
+      "La estructura del archivo css proporcionado no es válida";
+    document.getElementById("structureResult-css").className = "text-danger";
+
+    document.getElementById("errors-css-list").innerHTML = differencesCSS
       .map((e) => `<li>${e}</li>`)
       .join("");
   }

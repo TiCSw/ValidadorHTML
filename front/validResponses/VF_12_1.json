@@ -1,0 +1,48 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              },
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "p"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {
+    "h1": {
+      "background-color": "DodgerBlue",
+      "color": "white"
+    },
+    "p": {
+      "color": "MediumSeaGreen",
+      "border": "2px solid Tomato"
+    }
+  }
+}

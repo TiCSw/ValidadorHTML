@@ -1,0 +1,85 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              },
+              {
+                "tag": "base",
+                "attr": {
+                  "href": "https://www.escueladejardin.com/"
+                }
+              },
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "theme.css"
+                }
+              },
+              {
+                "tag": "meta",
+                "attr": {
+                  "name": "author",
+                  "content": ["Juan", "de", "Filadelfia"]
+                }
+              },
+              {
+                "tag": "meta",
+                "attr": {
+                  "name": "keywords",
+                  "content": ["html,", "javascript,", "css"]
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "h2"
+              },
+              {
+                "tag": "img",
+                "attr": {
+                  "src": "imagenes/jardines/img1.png",
+                  "alt": "flor1",
+                  "height": "60"
+                }
+              },
+              {
+                "tag": "p"
+              },
+              {
+                "tag": "a",
+                "attr": {
+                  "href": "jardineria"
+                }
+              },
+              {
+                "tag": "p"
+              },
+              {
+                "tag": "a",
+                "attr": {
+                  "href": "herboterapia"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {}
+}

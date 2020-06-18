@@ -1,0 +1,58 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "dl",
+                "children": [
+                  {
+                    "tag": "dt"
+                  },
+                  {
+                    "tag": "dd"
+                  },
+                  {
+                    "tag": "dt"
+                  },
+                  {
+                    "tag": "dd"
+                  },
+                  {
+                    "tag": "dt"
+                  },
+                  {
+                    "tag": "dd"
+                  },
+                  {
+                    "tag": "dt"
+                  },
+                  {
+                    "tag": "dd"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {}
+}

@@ -1,0 +1,71 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              },
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "h2"
+              },
+              {
+                "tag": "p"
+              },
+              {
+                "tag": "h2",
+                "attr": {
+                  "class": "naranja"
+                }
+              },
+              {
+                "tag": "p",
+                "attr": {
+                  "class": "azul_italica"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {
+    "h1": {
+      "color": "red"
+    },
+    "h2": {
+      "color": "blue"
+    },
+    "p": {
+      "text-align": "center"
+    },
+    ".naranja": {
+      "color": "orange"
+    },
+    ".azul_italica": {
+      "color": "blue",
+      "font-weight": "bold"
+    }
+  }
+}

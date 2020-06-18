@@ -1,0 +1,52 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              },
+              {
+                "tag": "title"
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "h2"
+              },
+              {
+                "tag": "p"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {
+    "h1": {
+      "color": "red"
+    },
+    "h2": {
+      "color": "blue"
+    },
+    "p": {
+      "text-align": "centered"
+    }
+  }
+}

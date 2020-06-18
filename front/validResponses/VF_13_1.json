@@ -1,0 +1,158 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              },
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "attr": {
+                      "class": "leftcolumn"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "attr": {
+                          "class": "card"
+                        },
+                        "children": [
+                          {
+                            "tag": "h2"
+                          },
+                          {
+                            "tag": "h5"
+                          },
+                          {
+                            "tag": "div",
+                            "attr": {
+                              "class": "fakeimg",
+                              "style": "height:200px;"
+                            },
+                            "children": [
+                              {
+                                "tag": "img",
+                                "attr": {
+                                  "src": "https://icon-library.net/images/photo-icon/photo-icon-0.jpg",
+                                  "height": "150px"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p"
+                          },
+                          {
+                            "tag": "p"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "attr": {
+                      "class": "rightcolumn"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "attr": {
+                          "class": "card"
+                        },
+                        "children": [
+                          {
+                            "tag": "h2"
+                          },
+                          {
+                            "tag": "h5"
+                          },
+                          {
+                            "tag": "div",
+                            "attr": {
+                              "class": "fakeimg",
+                              "style": "height:200px;"
+                            },
+                            "children": [
+                              {
+                                "tag": "img",
+                                "attr": {
+                                  "src": "https://icon-library.net/images/photo-icon/photo-icon-0.jpg",
+                                  "height": "150px"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p"
+                          },
+                          {
+                            "tag": "p"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {
+    "*": {
+      "box-sizing": "border-box"
+    },
+    "body": {
+      "font-family": "Arial",
+      "padding": "10px",
+      "background": "#f1f1f1"
+    },
+    ".leftcolumn": {
+      "float": "left",
+      "width": "70%",
+      "position": "static"
+    },
+    ".rightcolumn": {
+      "width": "30%",
+      "background-color": "#f1f1f1",
+      "padding-left": "20px",
+      "position": "static",
+      "display": "inline-block"
+    },
+    ".fakeimg": {
+      "background-color": "#aaa",
+      "width": "100%",
+      "padding": "20px",
+      "text-align": "center"
+    },
+    ".card": {
+      "background-color": "white",
+      "padding": "20px",
+      "margin-top": "20px"
+    }
+  }
+}

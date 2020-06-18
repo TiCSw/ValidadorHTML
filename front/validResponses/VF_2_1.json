@@ -1,0 +1,49 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "ol",
+                "children": [
+                  {
+                    "tag": "li"
+                  },
+                  {
+                    "tag": "li"
+                  },
+                  {
+                    "tag": "li"
+                  },
+                  {
+                    "tag": "li"
+                  },
+                  {
+                    "tag": "li"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {}
+}

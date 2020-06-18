@@ -1,0 +1,137 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "form",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "nombre"
+                        }
+                      },
+                      {
+                        "tag": "br"
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "text",
+                          "id": "nombre"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "correo"
+                        }
+                      },
+                      {
+                        "tag": "br"
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "email",
+                          "id": "correo"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "usuario"
+                        }
+                      },
+                      {
+                        "tag": "br"
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "text",
+                          "id": "usuario"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "clave"
+                        }
+                      },
+                      {
+                        "tag": "br"
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "password",
+                          "id": "clave"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "reset",
+                          "value": "Cancelar"
+                        }
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "submit",
+                          "value": "Guardar"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {}
+}

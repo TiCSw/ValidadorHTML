@@ -1,0 +1,65 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              },
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "p",
+                "attr": {
+                  "class": "primero"
+                }
+              },
+              {
+                "tag": "p",
+                "attr": {
+                  "class": "segundo"
+                }
+              },
+              {
+                "tag": "p",
+                "attr": {
+                  "class": "tercero"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {
+    "p.primero": {
+      "font-style": "italic"
+    },
+    "p.segundo": {
+      "font-weight": "bold"
+    },
+    "p.tercero": {
+      "font-size": "20px",
+      "font-family": "'Courier New', Courier, monospace"
+    }
+  }
+}

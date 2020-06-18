@@ -104,7 +104,7 @@ function compareJSON4CSS(obj1, obj2) {
         !obj1.hasOwnProperty(i) ||
         !_.isEqual(_.sortBy(obj2[i]), _.sortBy(obj1[i]))
       ) {
-        result.push(`Error en el selector ${i} --> ${obj2}`);
+        result.push(`Error en el selector ${i}`);
       }
     }
   }

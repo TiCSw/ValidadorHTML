@@ -1,0 +1,124 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              },
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "form",
+                "attr": {
+                  "name": "input",
+                  "action": "",
+                  "method": "get"
+                },
+                "children": [
+                  {
+                    "tag": "input",
+                    "attr": {
+                      "type": "text",
+                      "name": "Name",
+                      "size": "20"
+                    }
+                  },
+                  {
+                    "tag": "br"
+                  },
+                  {
+                    "tag": "input",
+                    "attr": {
+                      "type": "text",
+                      "name": "Name",
+                      "size": "20"
+                    }
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "visitante"
+                        }
+                      },
+                      {
+                        "tag": "br"
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "radio",
+                          "id": "familiar"
+                        }
+                      },
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "familiar"
+                        }
+                      },
+                      {
+                        "tag": "br"
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "radio",
+                          "id": "externo"
+                        }
+                      },
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "externo"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "input",
+                    "attr": {
+                      "type": "button",
+                      "value": "Inscribirse"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "cssStructure": {
+    "input[type=\"text\"]": {
+      "width": "150px",
+      "margin-bottom": "10px",
+      "background-color": "greenyellow"
+    },
+    "label[for=\"visitante\"]": {
+      "color": "orangered",
+      "font-weight": "bolder",
+      "font-size": "large"
+    }
+  }
+}

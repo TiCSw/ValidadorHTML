@@ -1,0 +1,11 @@
+p.primero{
+  font-style: italic;
+}
+p.segundo{
+  font-weight: bold;
+}
+p.tercero{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+

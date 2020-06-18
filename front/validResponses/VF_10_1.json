@@ -1,0 +1,62 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              },
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h2",
+                "attr": {
+                  "id": "encabezado"
+                }
+              },
+              {
+                "tag": "p"
+              },
+              {
+                "tag": "h2",
+                "attr": {
+                  "id": "encabezado"
+                }
+              },
+              {
+                "tag": "p"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "cssStructure": {
+    "h2": {
+      "color": "blue"
+    },
+    "p": {
+      "text-align": "center"
+    },
+    "#encabezado": {
+      "background-color": "pink"
+    }
+  }
+}
