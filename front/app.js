@@ -1,71 +1,85 @@
+const url = new URL(window.location.href);
+const type = url.searchParams.get("type");
+const exercise = url.searchParams.get("exercise");
+
+if (type === "1") {
+  document.getElementById("type2").hidden = true;
+}
+
 document.getElementById("results").hidden = true;
 document.getElementById("details").hidden = true;
 
-document.getElementById("file").onchange = function () {
-  const selectedFile = document.getElementById("file").files[0];
-  if (selectedFile) {
-    var reader = new FileReader();
-    reader.readAsText(selectedFile, "UTF-8");
-    reader.onload = function (evt) {
-      let htmlContent = btoa(evt.target.result);
-      d3.json("treeData.json", (error, htmlStructure) => {
-        const payload = {
-          htmlContent,
-          htmlStructure,
-          cssContent: "",
-          cssStructure: {},
-        };
-        fetch("http://localhost:3001", {
-          method: "POST",
-          body: JSON.stringify(payload),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        })
-          .then((res) => res.json())
-          .catch((error) => {
-            document.getElementById("results").hidden = false;
-            document.getElementById(
-              "structureResult"
-            ).innerHTML = `Ocurrió un error durante la validación: ${error}`;
-          })
-          .then((res) => {
-            console.log(res.differencesHTML);
-            renderResponse(res.isHtmlValid, res.differencesHTML);
-            drawTree(res.htmlInputStructure, "#source");
-            drawTree(res.htmlExpectedStructure, "#target");
-          });
-      });
-    };
-    reader.onerror = function (evt) {
-      console.log("error reading file");
-    };
+document.getElementById("fileForm").onsubmit = function (event) {
+  event.preventDefault();
+  const selectedHTMLFile = document.getElementById("fileHTML").files[0];
+  const selectedCSSFile = document.getElementById("fileCSS").files[0];
+
+  if (selectedHTMLFile) {
+    processHTML(selectedHTMLFile);
   }
 };
+
+function processHTML(selectedHTMLFile) {
+  returnFile(selectedHTMLFile, (data) => {
+    let htmlContent = btoa(data);
+    d3.json("treeData.json", (error, htmlStructure) => {
+      const payload = {
+        htmlContent,
+        htmlStructure,
+        cssContent: "",
+        cssStructure: {},
+      };
+      fetch("http://localhost:3001", {
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => res.json())
+        .catch((error) => {
+          document.getElementById("results").hidden = false;
+          document.getElementById(
+            "structureResult"
+          ).innerHTML = `Ocurrió un error durante la validación: ${error}`;
+        })
+        .then((res) => {
+          console.log(res.differencesHTML);
+          renderResponse(res.isHtmlValid, res.differencesHTML);
+          drawTree(res.htmlInputStructure, "#source");
+          drawTree(res.htmlExpectedStructure, "#target");
+        });
+    });
+  });
+}
+
+function returnFile(file, callback) {
+  var reader = new FileReader();
+  reader.readAsText(file, "UTF-8");
+  reader.onload = function (evt) {
+    callback(evt.target.result);
+  };
+  reader.onerror = function (evt) {
+    console.log("error reading file");
+  };
+}
 
 function renderResponse(isValid, differences) {
   document.getElementById("results").hidden = false;
   if (isValid) {
     document.getElementById("structureResult").innerHTML =
-      "La estructura de la página proporcionada es válida";
+      "La estructura del archivo html proporcionado es válida";
     document.getElementById("structureResult").className = "text-success";
   } else {
     document.getElementById("details").hidden = false;
     document.getElementById("structureResult").innerHTML =
-      "La estructura de la página proporcionada no es válida";
+      "La estructura del archivo html proporcionado no es válida";
     document.getElementById("structureResult").className = "text-danger";
     document.getElementById("errors").innerHTML = differences
       .map((e) => `<li>${e}</li>`)
       .join("");
   }
 }
-
-/*
-d3.json("treeData.json", (error, treeData) => {
-  drawTree(treeData, "#source");
-  drawTree(treeData, "#target");
-});
-*/
 
 function drawTree(treeData, div) {
   /************** Generate the tree diagram	 *****************/
@@ -224,8 +238,4 @@ function drawTree(treeData, div) {
     }
     update(d);
   }
-}
-
-function utf8_to_b64(str) {
-  return window.btoa(unescape(encodeURIComponent(str)));
 }

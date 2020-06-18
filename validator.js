@@ -8,16 +8,23 @@ const domValidation = (
   htmlExpectedStructure,
   cssExpectedStructure
 ) => {
+  let isCSSValid = true;
+  let differencesCSS = [];
+  let cssInputStructure = "";
+
   let htmlInputStructure = parseHTML2JSON(contentHTML);
   let isHtmlValid = _.isEqual(htmlInputStructure, htmlExpectedStructure);
 
-  let differencesHTML = compareJSON(
+  if (contentCSS.toString() !== "") {
+    cssInputStructure = parseCSS2JSON(contentCSS);
+    isCSSValid = _.isEqual(cssInputStructure, cssExpectedStructure);
+    differencesCSS = compareJSON4CSS(cssInputStructure, cssExpectedStructure);
+  }
+
+  let differencesHTML = compareJSON4HTML(
     htmlInputStructure.children[0],
     htmlExpectedStructure.children[0]
   );
-
-  let isCSSValid = true;
-  let differencesCSS = [];
 
   let response = {
     isHtmlValid,
@@ -70,7 +77,7 @@ const parseHTML = (json) => {
   return responseObject;
 };
 
-function compareJSON(obj1, obj2, array) {
+function compareJSON4HTML(obj1, obj2) {
   let result = [];
   let tags = compareTagName(obj1, obj2);
   let children = compareChildrenNumber(obj1, obj2);
@@ -81,8 +88,24 @@ function compareJSON(obj1, obj2, array) {
 
   if (obj1.children && obj2.children) {
     for (let i = 0; i < obj1.children.length; i++) {
-      let r = compareJSON(obj1.children[i], obj2.children[i]);
+      let r = compareJSON4HTML(obj1.children[i], obj2.children[i]);
       result.push(r);
+    }
+  }
+  return _.flattenDeep(result);
+}
+
+function compareJSON4CSS(obj1, obj2) {
+  let result = [];
+
+  if (obj1 && obj2) {
+    for (let i in obj2) {
+      if (
+        !obj1.hasOwnProperty(i) ||
+        !_.isEqual(_.sortBy(obj2[i]), _.sortBy(obj1[i]))
+      ) {
+        result.push(`Error en el selector ${i} --> ${obj2}`);
+      }
     }
   }
   return _.flattenDeep(result);

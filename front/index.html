@@ -19,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="custom-frontend.css" type="text/css" />
 
     <title>HTML Validator</title>
   </head>
@@ -35,18 +36,39 @@
         />
       </div>
 
-      <h2>Validador de HTML</h2>
+      <h2>Validador de HTML & CSS</h2>
 
-      <form>
+      <form id="fileForm" method="POST">
+        <div class="form-group text-left" id="type1">
+          <label for="fileHTML"
+            >Seleccione el archivo html para el ejercicio</label
+          >
+          <input
+            type="file"
+            class="form-control-file"
+            id="fileHTML"
+            name="fileHTML"
+          />
+        </div>
+        <div class="form-group text-left" id="type2">
+          <label for="fileCSS"
+            >Seleccione el archivo css para el ejercicio</label
+          >
+          <input
+            type="file"
+            class="form-control-file"
+            id="fileCSS"
+            name="fileCSS"
+          />
+        </div>
         <div class="form-group text-left">
-          <label for="file">Seleccione el archivo para el ejercicio</label>
-          <input type="file" class="form-control-file" id="file" name="file" />
+          <input type="submit" />
         </div>
       </form>
 
       <hr />
       <div id="results">
-        <h4>Resultado de la validación</h4>
+        <h4>Resultado de la validación del HTML</h4>
         <p id="structureResult"></p>
       </div>
       <div id="details">
@@ -60,6 +82,121 @@
         </div>
       </div>
     </div>
+
+    <footer id="sp-footer-wrapper" class="sisfooter">
+      <div class="container flex-center">
+        <div class="row-fluid" id="footer">
+          <div id="sp-footer1" class="span12">
+            <div class="custom">
+              <div class="footer" style="text-align: center;">
+                <div id="websis-icon" class="social-icons">
+                  <ul class="websis">
+                    <ul class="GENERAL">
+                      <li class="social-MUJERES">
+                        <a
+                          href="http://sistemas.uniandes.edu.co/mujeresencomputacion/"
+                          target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-LABS">
+                        <a
+                          href="https://labsis.uniandes.edu.co/"
+                          target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-RINCON">
+                        <a href="/~rincondelaspirante/sitio/" target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-PUBLICACIONES">
+                        <a
+                          href="/main/index.php/publicaciones-academia"
+                          target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-CUPI2">
+                        <a href="http://cupi2.uniandes.edu.co/" target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-EDUCONTI">
+                        <a
+                          href="http://educacioncontinuada.uniandes.edu.co/index.php/es/"
+                          target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-SCH">
+                        <a href="http://sch01.uniandes.edu.co/" target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-PARADIGMA">
+                        <a
+                          href="https://paradigma.uniandes.edu.co/"
+                          target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-FOROSISIS">
+                        <a
+                          href="https://forosisis.uniandes.edu.co/"
+                          target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                      <li class="social-SISINFO">
+                        <a
+                          href="http://sisinfo.uniandes.edu.co/"
+                          target="_blank"
+                          >DIOA</a
+                        >
+                      </li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+              <br />
+
+              <div style="text-align: center;">
+                <a href="https://apoyofinanciero.uniandes.edu.co/"
+                  >Apoyo Financiero</a
+                >
+                |
+                <a href="http://registro.uniandes.edu.co/"
+                  >Admisiones y Registro</a
+                >
+                | <a href="http://biblioteca.uniandes.edu.co/"> Biblioteca</a> |
+                <a href="https://sicuaplus.uniandes.edu.co"> Sicua Plus</a> |
+                <a href="http://agenda.uniandes.edu.co/">Agenda y Eventos</a> |
+                <a href="http://decanaturadeestudiantes.uniandes.edu.co/">
+                  Decanatura de Estudiantes</a
+                >
+              </div>
+              Universidad de los Andes | Vigilada Mineducaci&oacute;n<br />Reconocimiento
+              como Universidad: Decreto 1297 del 30 de mayo de 1964.<br />Reconocimiento
+              personer&iacute;a jur&iacute;dica: Resoluci&oacute;n 28 del 23 de
+              febrero de 1949 Minjusticia<br />
+              Edificio Mario Laserna Cra 1Este No 19A - 40 Bogot&aacute;
+              (Colombia) | Tel: [571] 3394949 Ext: 2860, 2861, 2862 | Fax: [571]
+              3324325 <br />
+              &copy; 2015 -<a href="/"
+                >Departamento de Ingenier&iacute;a de Sistemas y
+                Computaci&oacute;n</a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="http://www.joomshaper.com" title="joomshaper.com"></a>
+        <a class="sp-totop" href="javascript:;" title="Goto Top" rel="nofollow"
+          ><small>Goto Top </small><i class="icon-caret-up"></i
+        ></a>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
 

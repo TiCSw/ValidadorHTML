@@ -1,0 +1,405 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 24/06/2015, 05:44:20 PM
+    Author     : da.salinas3247
+*/
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional */
+}
+
+.sisfooter {
+  background-color: #1c1c1a;
+  color: #fffbfb;
+  margin-top: 40px;
+  max-width: 100%;
+}
+ul.social_list {
+  list-style-type: none;
+  display: inline-block;
+}
+.red {
+  text-align: center;
+  color: red;
+}
+.blue {
+  text-align: center;
+  color: blue;
+}
+.green {
+  text-align: center;
+  color: green;
+}
+
+/**********************************************************************/
+/**********************************************************************/
+.websis {
+  display: inline-block;
+  color: #ffffff; /*Fuente */
+  padding: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+  float: Center;
+  margin-bottom: 0px;
+  line-height: 0px;
+}
+.websis li {
+  color: #ffffff; /*Fuente */
+  padding: 5px;
+  display: inline;
+  list-style-type: none;
+  float: left;
+  margin-bottom: 0px;
+  background-color: transparent;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/*powered by websis DIOA   mod_sisfooter/assets/images/
+/* Iconos Sociales */
+.social-icons li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px; /*DIOA*/
+  text-indent: -9999px;
+  background-image: url(https://profesores.virtual.uniandes.edu.co/wp-content/plugins/sisfooter/assets/images/LogosFdepartamento_220_110.png);
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ffffff;
+  -webkit-border-radius: 10px; /*DIOA*/
+  -moz-border-radius: 10px;
+  border-radius: 20px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  ransition: all 0.2s ease-out;
+}
+
+.social-icons li a:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 40, 0.4);
+}
+
+.social-icons.has_gradient li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120%;
+  height: 120%;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0.2))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000',GradientType=0 ); /* IE6-9 */
+}
+/*mapa de posicion */
+
+.social-icons li.social-MUJERES a {
+  background-position: -4px -11px;
+} /* -x -y   */
+.social-icons li.social-LABS a {
+  background-position: -45px -11px;
+}
+.social-icons li.social-EDUCONTI a {
+  background-position: -83px -11px;
+}
+.social-icons li.social-CUPI2 a {
+  background-position: -124px -11px;
+}
+.social-icons li.social-PUBLICACIONES a {
+  background-position: -167px -11px;
+}
+.social-icons li.social-RINCON a {
+  background-position: -4px -56px;
+}
+.social-icons li.social-SCH a {
+  background-position: -45px -56px;
+}
+.social-icons li.social-PARADIGMA a {
+  background-position: -83px -55px;
+} /* -x -y   */
+.social-icons li.social-SISINFO a {
+  background-position: -124px -52px;
+}
+.social-icons li.social-FOROSISIS a {
+  background-position: -167px -50px;
+}
+.social-icons ul {
+  margin-left: -5px;
+}
+.social-icons ul.GENERAL li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #0b78a1;
+} /* -x -y   */
+.social-icons ul.GENERAL li a:hover {
+  background-color: #b1e6fa;
+}
+.social-icons ul.MATI li a {
+  background-color: #006772;
+} /* -x -y   */
+.social-icons ul.MATI li a:hover {
+  background-color: #7fb3b8;
+}
+.social-icons ul.MISIS li a {
+  background-color: #cc6633;
+} /* -x -y   */
+.social-icons ul.MISIS li a:hover {
+  background-color: #d88c66;
+}
+.social-icons ul.ISIS li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #50bfd5;
+} /* -x -y   */
+.social-icons ul.ISIS li a:hover {
+  background-color: #ade9f4;
+}
+.social-icons ul.ECOS li a {
+  background-color: #083f5b;
+} /* -x -y   */
+.social-icons ul.ECOS li a:hover {
+  background-color: #839fad;
+}
+.social-icons ul.EDEV li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #a80054;
+} /* -x -y   */
+.social-icons ul.EDEV li a:hover {
+  background-color: #d37fa9;
+}
+.social-icons ul.ESAFE li a {
+  background-color: #083f5b;
+} /* -x -y   */
+.social-icons ul.ESAFE li a:hover {
+  background-color: #839fad;
+}
+.social-icons ul.MESI li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #006633;
+} /* -x -y   */
+.social-icons ul.MESI li a:hover {
+  background-color: #7fb299;
+}
+.social-icons ul.MBIT li a {
+  background-color: #003399;
+} /* -x -y   */
+.social-icons ul.MBIT li a:hover {
+  background-color: #7f99cc;
+}
+.social-icons ul.MISO li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #663366;
+} /* -x -y   */
+.social-icons ul.MISO li a:hover {
+  background-color: #b399b2;
+}
+.social-icons ul.MBC li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #49756a;
+} /* -x -y   */
+.social-icons ul.MBC li a:hover {
+  background-color: #a4baa4;
+}
+.social-icons ul.EPOSGRADOS li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #738d3a;
+} /* -x -y   */
+.social-icons ul.EPOSGRADOS li a:hover {
+  background-color: #b9c69c;
+}
+.social-icons ul.COMIT li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #ec7327;
+} /* -x -y   */
+.social-icons ul.COMIT li a:hover {
+  background-color: #f5a675;
+}
+.social-icons ul.FOROS li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #007799;
+} /* -x -y   */
+.social-icons ul.FOROS li a:hover {
+  background-color: #3ca3c0;
+}
+.social-icons ul.INFORMEACTVIVIDADES li a {
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: #00a29c;
+} /* -x -y   */
+.social-icons ul.INFORMEACTVIVIDADES li a:hover {
+  background-color: #32d1cb;
+}
+
+/* Links por Programa */
+a.GENERAL:link,
+a.GENERAL:visited,
+a.GENERAL:active {
+  color: #0088cc;
+}
+a.GENERAL:hover {
+  color: #005580;
+}
+a.MATI:link,
+a.MATI:visited,
+a.MATI:active {
+  color: #006772;
+}
+a.MATI:hover {
+  color: #7fb3b8;
+}
+a.MISIS:link,
+a.MISIS:visited,
+a.MISIS:active {
+  color: #cc6633;
+}
+a.MISIS:hover {
+  color: #d88c66;
+}
+a.ISIS:link,
+a.ISIS:visited,
+a.ISIS:active {
+  color: #50bfd5;
+}
+a.ISIS:hover {
+  color: #ade9f4;
+}
+a.ECOS:link,
+a.ECOS:visited,
+a.ECOS:active {
+  color: #083f5b;
+}
+a.ECOS:hover {
+  color: #839fad;
+}
+a.EDEV:link,
+a.EDEV:visited,
+a.EDEV:active {
+  color: #a80054;
+}
+a.EDEV:hover {
+  color: #d37fa9;
+}
+a.ESAFE:link,
+a.ESAFE:visited,
+a.ESAFE:active {
+  color: #a80054;
+}
+a.ESAFE:hover {
+  color: #d37fa9;
+}
+a.MESI:link,
+a.MESI:visited,
+a.MESI:active {
+  color: #006633;
+}
+a.MESI:hover {
+  color: #7fb299;
+}
+a.MBIT:link,
+a.MBIT:visited,
+a.MBIT:active {
+  color: #003399;
+}
+a.MBIT:hover {
+  color: #7f99cc;
+}
+a.MISO:link,
+a.MISO:visited,
+a.MISO:active {
+  color: #663366;
+}
+a.MISO:hover {
+  color: #b299b2;
+}
+a.MBC:link,
+a.MBC:visited,
+a.MBC:active {
+  color: #49756a;
+}
+a.MBC:hover {
+  color: #a4baa4;
+}
+a.EPOSGRADOS:link,
+a.EPOSGRADOS:visited,
+a.EPOSGRADOS:active {
+  color: #738d3a;
+}
+a.EPOSGRADOS:hover {
+  color: #b9c69c;
+}
+a.COMIT:link,
+a.COMIT:visited,
+a.COMIT:active {
+  color: #eb621a;
+}
+a.COMIT:hover {
+  color: #f5a675;
+}
+a.FOROS:link,
+a.FOROS:visited,
+a.FOROS:active {
+  color: #007799;
+}
+a.FOROS:hover {
+  color: #3ca3c0;
+}
+a.INFORMEACTVIVIDADES:link,
+a.INFORMEACTVIVIDADES:visited,
+a.INFORMEACTVIVIDADES:active {
+  color: #00a29c;
+}
+a.INFORMEACTVIVIDADES:hover {
+  color: #32d1cb;
+}
+
+.titulo {
+  /*margin-top: 30px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eeeeee;
+  display: block;
+  background-image: url("https://laboratorios.virtual.uniandes.edu.co/wp-content/themes/templatedisctrap/images/squares.svg");
+  background-repeat: repeat-x;
+}
