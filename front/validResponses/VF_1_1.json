@@ -9,12 +9,7 @@
             "tag": "head",
             "children": [
               {
-                "tag": "title",
-                "children": [
-                  {
-                    "tag": "title"
-                  }
-                ]
+                "tag": "title"
               }
             ]
           },

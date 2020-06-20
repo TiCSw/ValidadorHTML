@@ -14,7 +14,7 @@
     "html2json": "^1.0.2",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "json-css": "^1.5.6",
+    "jsonpath": "^1.0.2",
     "lodash": "^4.17.15",
     "morgan": "~1.9.0"
   }

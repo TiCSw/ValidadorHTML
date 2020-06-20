@@ -1,30 +1,20 @@
 const html2json = require("html2json").html2json;
 const _ = require("lodash");
 const css2json = require("css2json");
-const jp = require("jsonpath");
-const { response } = require("express");
 
-let resp;
-
-const domValidation = (contentHTML, contentCSS, htmlExpectedStructure, cssExpectedStructure) => {
-  let isHtmlValid = true;
-  let htmlnputStructure;
-  let differencesHTML = [];
-
+const domValidation = (
+  contentHTML,
+  contentCSS,
+  htmlExpectedStructure,
+  cssExpectedStructure
+) => {
   let isCSSValid = true;
-  let cssInputStructure = "";
   let differencesCSS = [];
+  let cssInputStructure = "";
 
-  htmlnputStructure = parseHTML2JSON(contentHTML);
-  isHtmlValid = _.isEqual(htmlnputStructure, htmlExpectedStructure);
-  resp = [];
-  if (!isHtmlValid) {
-    compareJson(htmlnputStructure, htmlExpectedStructure, differencesHTML);
-  }
-  createResponse();
-  //return resp;
-  //return differencesHTML;
-  /*
+  let htmlInputStructure = parseHTML2JSON(contentHTML);
+  let isHtmlValid = _.isEqual(htmlInputStructure, htmlExpectedStructure);
+
   if (contentCSS.toString() !== "") {
     cssInputStructure = parseCSS2JSON(contentCSS);
     isCSSValid = _.isEqual(cssInputStructure, cssExpectedStructure);
@@ -46,60 +36,7 @@ const domValidation = (contentHTML, contentCSS, htmlExpectedStructure, cssExpect
   };
 
   return response;
-  */
 };
-
-function compareJson(obj1, obj2, differences) {
-  compare("$.children[*].tag", "", differences);
-
-  function compare(str, path, differences) {
-    resp.push(path);
-    let jp1 = jp.query(obj1, str);
-    let jp2 = jp.query(obj2, str);
-
-    valid = jp2.some((r) => {
-      if (!jp1.includes(r)) {
-        differences.push(`La respuesta no contiene el elemento ${path}/${r}`);
-      }
-    });
-
-    for (let i = 0; i < jp2.length; i++) {
-      let s = `?(@.tag=="${jp2[i]}")]`;
-      let newStr = str.replace("*].tag", s) + ".children[*].tag";
-      let newPath = path + "/" + jp2[i];
-      compare(newStr, newPath, differences);
-    }
-  }
-}
-
-function createResponse() {
-  let treePath = {};
-  console.log("Respo: ", resp);
-  resp.forEach((element) => {
-    if (element !== "") {
-      let nodes = element.split("/");
-      nodes = nodes.filter((e) => e !== "");
-      console.log("Resultado iteración: ", insertNode(nodes, treePath));
-    }
-  });
-
-  //console.log("Response---->>>");
-  //console.log(JSON.stringify(treePath, null, 4));
-}
-
-function insertNode(nodes, tree) {
-  let base = { tag: nodes[0] };
-  let raiz = base;
-  for (let i = 1; i < nodes.length; i++) {
-    let newNode = { tag: nodes[i] };
-    if (!raiz.children) {
-      raiz.children = [];
-      raiz.children.push(newNode);
-    }
-    raiz = newNode;
-  }
-  return base;
-}
 
 const parseCSS2JSON = (data) => {
   return parseStyle(data.toString());
@@ -163,7 +100,10 @@ function compareJSON4CSS(obj1, obj2) {
 
   if (obj1 && obj2) {
     for (let i in obj2) {
-      if (!obj1.hasOwnProperty(i) || !_.isEqual(_.sortBy(obj2[i]), _.sortBy(obj1[i]))) {
+      if (
+        !obj1.hasOwnProperty(i) ||
+        !_.isEqual(_.sortBy(obj2[i]), _.sortBy(obj1[i]))
+      ) {
         result.push(`Error en el selector ${i}`);
       }
     }
@@ -190,7 +130,10 @@ function compareAttribs(obj1, obj2) {
   let cause = "";
   if (obj1 && obj2 && obj1.attr) {
     for (let i in obj2.attr) {
-      if (!obj1.attr.hasOwnProperty(i) || !_.isEqual(_.sortBy(obj2.attr[i]), _.sortBy(obj1.attr[i]))) {
+      if (
+        !obj1.attr.hasOwnProperty(i) ||
+        !_.isEqual(_.sortBy(obj2.attr[i]), _.sortBy(obj1.attr[i]))
+      ) {
         cause += `Error en el atributo ${i}: ${obj2.attr[i]} del tag ${obj2.tag}`;
       }
     }
