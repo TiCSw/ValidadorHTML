@@ -12,17 +12,21 @@ const domValidation = (contentHTML, contentCSS, htmlExpectedStructure, cssExpect
   let cssInputStructure = "";
   let differencesCSS = [];
 
-  htmlInputStructure = parseHTML2JSON(contentHTML);
-  isHtmlValid = _.isEqual(htmlInputStructure, htmlExpectedStructure);
+  if (contentHTML.toString() !== "") {
+    htmlInputStructure = parseHTML2JSON(contentHTML);
+    isHtmlValid = _.isEqual(htmlInputStructure, htmlExpectedStructure);
 
-  if (!isHtmlValid) {
-    compareJson(htmlInputStructure, htmlExpectedStructure, differencesHTML);
+    if (!isHtmlValid) {
+      compareJson(htmlInputStructure, htmlExpectedStructure, differencesHTML);
+    }
   }
 
   if (contentCSS.toString() !== "") {
     cssInputStructure = parseCSS2JSON(contentCSS);
     isCSSValid = _.isEqual(cssInputStructure, cssExpectedStructure);
-    differencesCSS = compareJSON4CSS(cssInputStructure, cssExpectedStructure);
+    if (!isCSSValid) {
+      differencesCSS = compareJSON4CSS(cssInputStructure, cssExpectedStructure);
+    }
   }
 
   let response = {
@@ -39,13 +43,15 @@ const domValidation = (contentHTML, contentCSS, htmlExpectedStructure, cssExpect
 
 function compareJson(obj1, obj2, differences) {
   compare("$.children[*].tag", "", differences);
+  compareAttribs(differences);
+
   function compare(str, path, differences) {
     let jp1 = jp.query(obj1, str);
     let jp2 = jp.query(obj2, str);
 
     valid = jp2.some((r) => {
       if (!jp1.includes(r)) {
-        differences.push({ message: "La respuesta no contiene el elemento", value: `${path}/${r}` });
+        differences.push({ message: "La respuesta no contiene el elemento", value: `${path}/${r}`, type: "tag" });
       }
     });
 
@@ -54,6 +60,16 @@ function compareJson(obj1, obj2, differences) {
       let newStr = str.replace("*].tag", s) + ".children[*].tag";
       let newPath = path + "/" + element;
       compare(newStr, newPath, differences);
+    });
+  }
+
+  function compareAttribs(differences) {
+    let jp1 = jp.nodes(obj1, "$.children..attr");
+    let jp2 = jp.nodes(obj2, "$.children..attr");
+
+    let array = jp2.filter((entry1) => !jp1.some((entry2) => _.isEqual(entry1.value, entry2.value)));
+    array.forEach((element) => {
+      differences.push({ message: "La respuesta no contiene el elemento", value: `${JSON.stringify(element.value)}`, type: "attr" });
     });
   }
 }
