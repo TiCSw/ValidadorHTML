@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "31705086-045e-4f48-b118-f44ca30dd00b",
+		"name": "Modulo 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "VF_3_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CiAKPGh0bWw+CiAgPGhlYWQ+CiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyA1PC90aXRsZT4KICA8L2hlYWQ+CiAKICA8Ym9keT4KICAgIDxoMT5WZW50YSBkZSBpbm11ZWJsZXM8L2gxPgogICAgPGltZyBzcmM9J2h0dHBzOi8vY29tb29yZ2FuaXphcmxhY2FzYS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMTkvMDYvRGlzZW5vcy1tb2Rlcm5vcy1jYXNhLWRlLTMtaGFiaXRhY2lvbmVzLXktMS1CYW5vLmpwZycgd2lkdGg9JzIwMCc+CiAgICA8aDI+Q2FzYSB1cmJhbmE8L2JyPgogICAgUHJlY2lvOiQyMDA8L2JyPgogICAgVGVsZWZvbm86MTExMjIyMwogICAgPC9oMj4KICAgIDxpbWcgc3JjPSdodHRwczovL3d3dy5wbGFub3NncmF0aXMubmV0L3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE2LzEyL2Nhc2EtdXJiYW5hLWRlLXRyZXMtZG9ybWl0b3Jpb3MtZW4tZG9zLXBsYW50YXMtNTAweDMxMi5qcGcnIHdpZHRoPScyMDAnPgogICAgPGgyPkNhc2EgcnVyYWw8L2JyPgogICAgUHJlY2lvOiQ2MDA8L2JyPgogICAgVGVsZWZvbm86MTExMjIyNAogICAgPC9oMj4KICAgIDxpbWcgc3JjPSdodHRwczovL2FycXVpdGVjdHVyYXljb25jcmV0by5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMTgvMDkvYXJxdWl0ZWN0dXJheWNvbmNyZXRvLWhhY2llbmRhLW5pcXVpYS1wcm95ZWN0by1oYWNpZW5kYS1uaXF1aWEtYXJxdWl0ZWN0dXJhLXktY29uY3JldG8tOC5qcGcnIHdpZHRoPScyMDAnPgogICAgPGgyPkFwYXJ0YW1lbnRvPC9icj4KICAgIFByZWNpbzokMTcwPC9icj4KICAgIFRlbGVmb25vOjExMTIyMjUKICAgIDwvaDI+CiAgPC9ib2R5Pgo8L2h0bWw+Cg==\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"img\",\n                                \"attr\": {\n                                    \"src\": \"https://comoorganizarlacasa.com/wp-content/uploads/2019/06/Disenos-modernos-casa-de-3-habitaciones-y-1-Bano.jpgpk\",\n                                    \"width\": \"200\"\n                                }\n                            },\n                            {\n                                \"tag\": \"h2000\"\n                            },\n                            {\n                                \"tag\": \"img\",\n                                \"attr\": {\n                                    \"src\": \"https://www.planosgratis.net/wp-content/uploads/2016/12/casa-urbana-de-tres-dormitorios-en-dos-plantas-500x312.jpg\",\n                                    \"width\": \"200\"\n                                }\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"img\",\n                                \"attr\": {\n                                    \"src\": \"https://arquitecturayconcreto.com/wp-content/uploads/2018/09/arquitecturayconcreto-hacienda-niquia-proyecto-hacienda-niquia-arquitectura-y-concreto-8.jpg\",\n                                    \"width\": \"200\"\n                                }\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_4_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CiAKPGh0bWw+CiAgPGhlYWQ+CiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyA2IDwvdGl0bGU+CiAgPC9oZWFkPgogCiAgPGJvZHk+CiAgICA8aDE+UMOhZ2luYXMgcmVjb21lbmRhZGFzIHBhcmEgYXByZW5kZXIgCiAgICAgIGlkaW9tYXM8L2gxPgogICAgPHVsPgogICAgICA8bGk+PGEgaHJlZj0naHR0cHM6Ly93d3cubGl2ZW1vY2hhLmNvLyc+bGl2ZW1vY2hhPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSdodHRwczovL2VzLmR1b2xpbmdvLmNvbS8nPmR1b2xpbmdvPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSdodHRwczovL3d3dy5pdGFsa2kuY29tLyc+aXRhbGtpPC9hPjwvbGk+CiAgICA8L3VsPgogICAgCiAgPC9ib2R5Pgo8L2h0bWw+Cg==\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"ul\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"li\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"a\",\n                                                \"attr\": {\n                                                    \"href\": \"https://www.livemocha.co/\"\n                                                }\n                                            }\n                                        ]\n                                    },\n                                    {\n                                        \"tag\": \"li\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"a\",\n                                                \"attr\": {\n                                                    \"href\": \"https://es.duolingo.com/\"\n                                                }\n                                            }\n                                        ]\n                                    },\n                                    {\n                                        \"tag\": \"li\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"a\",\n                                                \"attr\": {\n                                                    \"href\": \"https://www.italki.com/\"\n                                                }\n                                            }\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_5_1 ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFET0NUWVBFIGh0bWw+CjxodG1sPgoKICA8aGVhZD4KICAgIDx0aXRsZT5SZXNwdWVzdGEgZWplcmNpY2lvIDcgPC90aXRsZT4KICA8L2hlYWQ+CgogIDxib2R5PgogICAgPGgxPkN1bXBsZWHDsW9zIGVuIGxhIG9maWNpbmE8L2gxPgogICAgPHRhYmxlPgogICAgICA8dGhlYWQ+CiAgICAgICAgPHRyPgogICAgICAgICAgPHRoPk5vbWJyZTwvdGg+CiAgICAgICAgICA8dGg+RmVjaGEgZGUgY3VtcGxlYcOxb3M8L3RoPgogICAgICAgICAgPHRoPkVkYWQ8L3RoPgogICAgICAgIDwvdHI+CiAgICAgIDwvdGhlYWQ+CiAgICAgIDx0Ym9keT4KICAgICAgICA8dHI+CiAgICAgICAgICA8dGQ+SnVhbiBQw6lyZXo8L3RkPgogICAgICAgICAgPHRkPk5vdmllbWJyZSA5PC90ZD4KICAgICAgICAgIDx0ZD4zMCBhw7FvczwvdGQ+CiAgICAgICAgPC90cj4KICAgICAgICA8dHI+CiAgICAgICAgICA8dGQ+QWxpY2lhIFJhbcOtcmV6PC90ZD4KICAgICAgICAgIDx0ZD5BZ29zdG8gMjc8L3RkPgogICAgICAgICAgPHRkPjI2IGHDsW9zPC90ZD4KICAgICAgICA8L3RyPgogICAgICAgIDx0cj4KICAgICAgICAgIDx0ZD5DYXJsb3MgTGFuZzwvdGQ+CiAgICAgICAgICA8dGQ+RGljaWVtYnJlIDEzPC90ZD4KICAgICAgICAgIDx0ZD4zNyBBw7FvczwvdGQ+CiAgICAgICAgPC90cj4KICAgICAgPC90Ym9keT4KICAgIDwvdGFibGU+CiAgPC9ib2R5PgoKPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"table\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"thead\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"tr\",\n                                                \"children\": [\n                                                    {\n                                                        \"tag\": \"th\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"th\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"th\"\n                                                    }\n                                                ]\n                                            }\n                                        ]\n                                    },\n                                    {\n                                        \"tag\": \"tbody\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"tr\",\n                                                \"children\": [\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"tag\": \"tr\",\n                                                \"children\": [\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"tag\": \"tr\",\n                                                \"children\": [\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    }\n                                                ]\n                                            }\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_6_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFET0NUWVBFIGh0bWw+CjxodG1sPgoKICA8aGVhZD4KICAgIDx0aXRsZT5SZXNwdWVzdGEgZWplcmNpY2lvIDggPC90aXRsZT4KICA8L2hlYWQ+CgogIDxib2R5PgogICAgPGgxPlJlZ2lzdHJvPC9oMT4KICAgIDxmb3JtPgogICAgICA8ZGl2PgogICAgICAgIDxsYWJlbCBmb3I9J25vbWJyZSc+Tm9tYnJlPC9sYWJlbD48YnI+CiAgICAgICAgPGlucHV0IHR5cGU9J3RleHQnIGlkPSdub21icmUnPgogICAgICA8L2Rpdj4KICAgICAgPGRpdj4KICAgICAgICA8bGFiZWwgZm9yPSdjb3JyZW8nPkNvcnJlbzwvbGFiZWw+PGJyPgogICAgICAgIDxpbnB1dCB0eXBlPSdlbWFpbCcgaWQ9J2NvcnJlbyc+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2PgogICAgICAgIDxsYWJlbCBmb3I9J3VzdWFyaW8nPlVzdWFyaW88L2xhYmVsPjxicj4KICAgICAgICA8aW5wdXQgdHlwZT0ndGV4dCcgaWQ9J3VzdWFyaW8nPgogICAgICA8L2Rpdj4KICAgICAgPGRpdj4KICAgICAgICA8bGFiZWwgZm9yPSdjbGF2ZSc+Q2xhdmU8L2xhYmVsPjxicj4KICAgICAgICA8aW5wdXQgdHlwZT0ncGFzc3dvcmQnIGlkPSdjbGF2ZSc+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2PgogICAgICAgIDxpbnB1dCB0eXBlPSdyZXNldCcgdmFsdWU9J0NhbmNlbGFyJz4KICAgICAgICA8aW5wdXQgdHlwZT0nc3VibWl0JyB2YWx1ZT0nR3VhcmRhcic+CiAgICAgIDwvZGl2PgogICAgPC9mb3JtPgogIDwvYm9keT4KCjwvaHRtbD4KCg==\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"form\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"div\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"label\",\n                                                \"attr\": {\n                                                    \"for\": \"nombre\"\n                                                }\n                                            },\n                                            {\n                                                \"tag\": \"br\"\n                                            },\n                                            {\n                                                \"tag\": \"input\",\n                                                \"attr\": {\n                                                    \"type\": \"text\",\n                                                    \"id\": \"nombre\"\n                                                }\n                                            }\n                                        ]\n                                    },\n                                    {\n                                        \"tag\": \"div\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"label\",\n                                                \"attr\": {\n                                                    \"for\": \"correo\"\n                                                }\n                                            },\n                                            {\n                                                \"tag\": \"br\"\n                                            },\n                                            {\n                                                \"tag\": \"input\",\n                                                \"attr\": {\n                                                    \"type\": \"email\",\n                                                    \"id\": \"correo\"\n                                                }\n                                            }\n                                        ]\n                                    },\n                                    {\n                                        \"tag\": \"div\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"label\",\n                                                \"attr\": {\n                                                    \"for\": \"usuario\"\n                                                }\n                                            },\n                                            {\n                                                \"tag\": \"br\"\n                                            },\n                                            {\n                                                \"tag\": \"input\",\n                                                \"attr\": {\n                                                    \"type\": \"text\",\n                                                    \"id\": \"usuario\"\n                                                }\n                                            }\n                                        ]\n                                    },\n                                    {\n                                        \"tag\": \"div\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"label\",\n                                                \"attr\": {\n                                                    \"for\": \"clave\"\n                                                }\n                                            },\n                                            {\n                                                \"tag\": \"br\"\n                                            },\n                                            {\n                                                \"tag\": \"input\",\n                                                \"attr\": {\n                                                    \"type\": \"password\",\n                                                    \"id\": \"clave\"\n                                                }\n                                            }\n                                        ]\n                                    },\n                                    {\n                                        \"tag\": \"div\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"input\",\n                                                \"attr\": {\n                                                    \"type\": \"reset\",\n                                                    \"value\": \"Cancelar\"\n                                                }\n                                            },\n                                            {\n                                                \"tag\": \"input\",\n                                                \"attr\": {\n                                                    \"type\": \"submit\",\n                                                    \"value\": \"Guardar\"\n                                                }\n                                            }\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_7_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFET0NUWVBFIGh0bWw+CjxodG1sPgoKICA8aGVhZD4KICAgIDx0aXRsZT5KYXJkaW5lcsOtYSB5IGhlcmJvdGVyYXBpYTwvdGl0bGU+CiAgICA8YmFzZSBocmVmPSJodHRwczovL3d3dy5lc2N1ZWxhZGVqYXJkaW4uY29tLyI+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InRoZW1lLmNzcyI+CiAgICA8bWV0YSBuYW1lPSJhdXRob3IiIGNvbnRlbnQ9Ikp1YW4gZGUgRmlsYWRlbGZpYSI+CiAgICA8bWV0YSBuYW1lPSJrZXl3b3JkcyIgY29udGVudD0iaHRtbCwgamF2YXNjcmlwdCwgY3NzIj4KICA8L2hlYWQ+CgogIDxib2R5PgogICAgPGgxPkphcmRpbmVyw61hIHkgaGVyYm90ZXJhcGlhPC9oMT4KICAgIDxoMj5CaWVudmVuaWRvIGEgdHUgamFyZMOtbiBkZSBwYXo8L2gyPgogICAgPGltZyBzcmM9ImltYWdlbmVzL2phcmRpbmVzL2ltZzEucG5nIiBhbHQ9ImZsb3IxIiBoZWlnaHQ9IjYwIj4KICAgIDxwPkhheiBjbGljayBhcXXDrSBwYXJhIHJldmlzYXIgdGlwcyBkZSBqYXJkaW5lcsOtYTwvcD4KICAgIDxhIGhyZWY9ImphcmRpbmVyaWEiPkphcmRpbmVyw61hPC9hPgogICAgPHA+SGF6IGNsaWNrIGFxdcOtIHBhcmEgcmV2aXNhciB0aXBzIGRlIGhlYm90ZXJhcGlhPC9wPgogICAgPGEgaHJlZj0iaGVyYm90ZXJhcGlhIj5IZXJib3RlcmFwaWE8L2E+CiAgPC9ib2R5PgoKPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            },\n                            {\n                                \"tag\": \"base\",\n                                \"attr\": {\n                                    \"href\": \"https://www.escueladejardin.com/\"\n                                }\n                            },\n                            {\n                                \"tag\": \"link\",\n                                \"attr\": {\n                                    \"rel\": \"stylesheet\",\n                                    \"href\": \"theme.css\"\n                                }\n                            },\n                            {\n                                \"tag\": \"meta\",\n                                \"attr\": {\n                                    \"name\": \"author\",\n                                    \"content\": [\n                                        \"Juan\",\n                                        \"de\",\n                                        \"Filadelfia\"\n                                    ]\n                                }\n                            },\n                            {\n                                \"tag\": \"meta\",\n                                \"attr\": {\n                                    \"name\": \"keywords\",\n                                    \"content\": [\n                                        \"html,\",\n                                        \"javascript,\",\n                                        \"css\"\n                                    ]\n                                }\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"img\",\n                                \"attr\": {\n                                    \"src\": \"imagenes/jardines/img1.png\",\n                                    \"alt\": \"flor1\",\n                                    \"height\": \"60\"\n                                }\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"a\",\n                                \"attr\": {\n                                    \"href\": \"jardineria\"\n                                }\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"a\",\n                                \"attr\": {\n                                    \"href\": \"herboterapia\"\n                                }\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

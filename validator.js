@@ -12,13 +12,12 @@ const domValidation = (contentHTML, contentCSS, htmlExpectedStructure, cssExpect
   let cssInputStructure = "";
   let differencesCSS = [];
 
+  let grade = 0;
+
   if (contentHTML.toString() !== "") {
     htmlInputStructure = parseHTML2JSON(contentHTML);
-    isHtmlValid = _.isEqual(htmlInputStructure, htmlExpectedStructure);
-
-    if (!isHtmlValid) {
-      compareJson(htmlInputStructure, htmlExpectedStructure, differencesHTML);
-    }
+    differencesHTML = compareJson(htmlInputStructure, htmlExpectedStructure);
+    isHtmlValid = differencesHTML.length === 0 ? true : false;
   }
 
   if (contentCSS.toString() !== "") {
@@ -29,6 +28,8 @@ const domValidation = (contentHTML, contentCSS, htmlExpectedStructure, cssExpect
     }
   }
 
+  grade = getGrade(htmlExpectedStructure, differencesHTML);
+
   let response = {
     isHtmlValid,
     htmlInputStructure,
@@ -36,16 +37,26 @@ const domValidation = (contentHTML, contentCSS, htmlExpectedStructure, cssExpect
     differencesHTML,
     isCSSValid,
     differencesCSS,
+    grade,
   };
 
   return response;
 };
 
-function compareJson(obj1, obj2, differences) {
-  compare("$.children[*].tag", "", differences);
-  compareAttribs(differences);
+function getGrade(input, differences) {
+  let tags = jp.query(input, "$.children..tag").length;
+  let diffs = differences.length;
+  let grade = ((tags - diffs) / tags) * 5;
+  return grade.toFixed(2);
+}
 
-  function compare(str, path, differences) {
+function compareJson(obj1, obj2) {
+  let differences = [];
+  compareTags("$.children[*].tag", "");
+  compareAttribs();
+  return differences;
+
+  function compareTags(str, path) {
     let jp1 = jp.query(obj1, str);
     let jp2 = jp.query(obj2, str);
 
@@ -59,11 +70,11 @@ function compareJson(obj1, obj2, differences) {
       let s = `?(@.tag=="${element}")]`;
       let newStr = str.replace("*].tag", s) + ".children[*].tag";
       let newPath = path + "/" + element;
-      compare(newStr, newPath, differences);
+      compareTags(newStr, newPath);
     });
   }
 
-  function compareAttribs(differences) {
+  function compareAttribs() {
     let jp1 = jp.nodes(obj1, "$.children..attr");
     let jp2 = jp.nodes(obj2, "$.children..attr");
 

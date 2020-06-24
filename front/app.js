@@ -72,7 +72,7 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
         })
         .then((res) => {
           console.log(res.differencesHTML);
-          renderResponse(res.isHtmlValid, res.differencesHTML, res.isCSSValid, res.differencesCSS);
+          renderResponse(res.isHtmlValid, res.differencesHTML, res.isCSSValid, res.differencesCSS, res.grade);
           drawTree(res.htmlInputStructure, "#source");
           drawTree(res.htmlExpectedStructure, "#target");
         });
@@ -91,18 +91,20 @@ function returnFile(file, callback) {
   };
 }
 
-function renderResponse(isHtmlValid, differencesHTML, isCSSValid, differencesCSS) {
+function renderResponse(isHtmlValid, differencesHTML, isCSSValid, differencesCSS, grade) {
   document.getElementById("validation-html").hidden = false;
   if (type === "2") {
     document.getElementById("validation-css").hidden = false;
   }
   if (isHtmlValid) {
-    document.getElementById("structureResult-html").innerHTML = "La estructura del archivo html proporcionado es válida";
+    document.getElementById("structureResult-html").innerHTML = `<p>La estructura del archivo html proporcionado es válida</p><p>Nota: ${grade}</p>`;
     document.getElementById("structureResult-html").className = "text-success";
   } else {
     document.getElementById("details-html").hidden = false;
     document.getElementById("errors-html").hidden = false;
-    document.getElementById("structureResult-html").innerHTML = "La estructura del archivo html proporcionado no es válida";
+    document.getElementById(
+      "structureResult-html"
+    ).innerHTML = `<p>La estructura del archivo html proporcionado no es válida</p><p>Nota: ${grade}</p>`;
     document.getElementById("structureResult-html").className = "text-danger";
 
     document.getElementById("errors-html-list").innerHTML = differencesHTML.map((e) => `<li>${e.message} ${e.value} </li>`).join("");
