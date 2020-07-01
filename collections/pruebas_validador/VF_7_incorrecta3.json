@@ -1,0 +1,84 @@
+{ "content": "PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCg0KICA8aGVhZD4NCiAgICA8dGl0bGU+SmFyZGluZXLDrWEgeSBoZXJib3RlcmFwaWE8L3RpdGxlPg0KICAgIDxiYXNlIGhyZWY9Imh0dHBzOi8vd3d3LmVzY3VlbGFkZWphcmRpbi5jb20vIj4NCiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InRoZW1lLmNzcyI+DQogICAgPG1ldGEgbmFtZT0iYXV0aG9yIiBjb250ZW50PSJKdWFuIGRlIEZpbGFkZWxmaWEiPg0KICAgIDxtZXRhIG5hbWU9ImtleXdvcmRzIiBjb250ZW50PSJodG1sLCBqYXZhc2NyaXB0LCBjc3MiPg0KICANCg0KICA8Ym9keT4NCiAgICA8aDE+SmFyZGluZXLDrWEgeSBoZXJib3RlcmFwaWE8L2gxPg0KICAgIDxoMj5CaWVudmVuaWRvIGEgdHUgamFyZMOtbiBkZSBwYXo8L2gyPg0KICAgIDxpbWcgc3JjPSJpbWFnZW5lcy9qYXJkaW5lcy9pbWcxLnBuZyIgYWx0PSJmbG9yMSIgaGVpZ2h0PSI2MCI+DQogICAgPHA+SGF6IGNsaWNrIGFxdcOtIHBhcmEgcmV2aXNhciB0aXBzIGRlIGphcmRpbmVyw61hPC9wPg0KICAgIDxhIGhyZWY9ImphcmRpbmVyaWEiPkphcmRpbmVyw61hPC9hPg0KICAgIDxwPkhheiBjbGljayBhcXXDrSBwYXJhIHJldmlzYXIgdGlwcyBkZSBoZWJvdGVyYXBpYTwvcD4NCiAgICA8YSBocmVmPSJoZXJib3RlcmFwaWEiPkhlcmJvdGVyYXBpYTwvYT4NCiAgPC9ib2R5Pg0KDQo8L2h0bWw+",
+  "structureValidation": {
+	"rootSelector": "html",
+  	"elementsList": ["head","title","base","link","meta","meta","style","body","h1","h2","img","p","a","p","a"]
+  },
+  "valueValidations": [
+  	   {
+	  		"selector": "base",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "https://www.escueladejardin.com/"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "link",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "rel",
+	  			  "value": "stylesheet"
+	  			},
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "theme.css"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "head>meta:nth-child(4)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "name",
+	  			  "value": "author"
+	  			},
+	  			{ 
+	  			  "attribute": "content",
+	  			  "value": "Juan de Filadelfia"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "head>meta:nth-child(5)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "name",
+	  			  "value": "keywords"
+	  			},
+	  			{ 
+	  			  "attribute": "content",
+	  			  "value": "html, javascript, css"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>img:nth-child(3)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "src",
+	  			  "value": "imagenes/jardines/img1.png"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>a:nth-child(5)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "jardineria"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>a:nth-child(7)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "herboterapia"
+	  			}
+	  		]
+	  	}
+  
+]
+}
