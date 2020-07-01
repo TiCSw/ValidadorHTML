@@ -1,0 +1,213 @@
+{ "content": "PCFkb2N0eXBlIGh0bWw+DQo8aHRtbCBsYW5nPSJlbiI+DQogIDxoZWFkPg0KDQogICAgPCEtLSBSZXF1aXJlZCBtZXRhIHRhZ3MgLS0+DQogICAgPG1ldGEgY2hhcnNldD0idXRmLTgiPg0KICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSwgc2hyaW5rLXRvLWZpdD1ubyI+DQogDQogICAgPCEtLSBCb290c3RyYXAgQ1NTIC0tPg0KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9zdGFja3BhdGguYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvNC40LjEvY3NzL2Jvb3RzdHJhcC5taW4uY3NzIiBpbnRlZ3JpdHk9InNoYTM4NC1Wa29vOHg0Q0dzTzMrSGh4djhUL1E1UGFYdGtLdHU2dWc1VE9lTlY2Z0JpRmVXUEdGTjlNdWhPZjIzUTlJZmpoIiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj4NCiANCiAgICA8dGl0bGU+SGVsbG8sIHdvcmxkITwvdGl0bGU+DQogIDwvaGVhZD4NCiAgPGJvZHk+DQogICAgPGRpdiBjbGFzcz0iY29udGFpbmVyLWZsdWlkIj4NCiAgICAgIDxkaXYgY2xhc3M9InJvdyBiZy1saWdodCI+DQogICAgICAgIDxkaXYgY2xhc3M9ImNvbC0yIj4gDQogICAgICAgIDxhIGhyZWY9ImJsYWgiPkluaWNpYXIgc2VzacOzbjwvYT4NCiAgICAgICAgPC9kaXY+DQogICAgICAgIDxkaXYgY2xhc3M9ImNvbC0yIj4NCiAgICAgICAgICA8YSBocmVmPSJibGFoIj5SZWdpc3RybzwvYT4NCiAgICAgICAgPC9kaXY+DQogICAgICA8L2Rpdj4NCiAgICAgIDxkaXYgY2xhc3M9InJvdyBiZy1kYXJrIHRleHQtd2hpdGUiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtMTIiIGFsaWduPSJjZW50ZXIiPg0KICAgICAgICAgIDxoMT5CSUVOVkVOSURPPC9oMT4NCiAgICAgICAgPC9kaXY+DQogICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiIgYWxpZ249ImNlbnRlciI+DQogICAgICAgICAgSW5pY2llIHNlc2nDs24gbyBleHBsb3JlIGxpYnJlbWVudGUgbGEgcMOhZ2luYQ0KICAgICAgICA8L2Rpdj4NCiAgICAgIDwvZGl2Pg0KICAgICAgPGRpdiBjbGFzcz0icm93Ij4NCiAgICAgICAgPGRpdiBjbGFzcz0iY29sLTEyIj4NCiAgICAgICAgICA8cD5Mb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LCBzZWQgZG8gZWl1c21vZCB0ZW1wb3IgaW5jaWRpZHVudCB1dCBsYWJvcmUgZXQgZG9sb3JlIG1hZ25hIGFsaXF1YS4gVXQgZW5pbSBhZCBtaW5pbSB2ZW5pYW0sIHF1aXMgbm9zdHJ1ZCBleGVyY2l0YXRpb24gdWxsYW1jbyBsYWJvcmlzIG5pc2kgdXQgYWxpcXVpcCBleCBlYSBjb21tb2RvIGNvbnNlcXVhdC4gRHVpcyBhdXRlIGlydXJlIGRvbG9yIGluIHJlcHJlaGVuZGVyaXQgaW4gdm9sdXB0YXRlIHZlbGl0IGVzc2UgY2lsbHVtIGRvbG9yZSBldSBmdWdpYXQgbnVsbGEgcGFyaWF0dXIuIEV4Y2VwdGV1ciBzaW50IG9jY2FlY2F0IGN1cGlkYXRhdCBub24gcHJvaWRlbnQsIHN1bnQgaW4gY3VscGEgcXVpIG9mZmljaWEgZGVzZXJ1bnQgbW9sbGl0IGFuaW0gaWQgZXN0IGxhYm9ydW0uIDwvcD4NCiAgICAgICAgPC9kaXY+DQogICAgICAgIDxkaXYgY2xhc3M9ImJnLWxpZ2h0IiBhbGlnbj0iY2VudGVyIj4NCiAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9pbWcuaWNvbnM4LmNvbS9kdXNrLzEwMC8wMDAwMDAvaW5zdGFudC1jYW1lcmEucG5nIi8+DQogICAgICAgIDwvZGl2Pg0KICAgICAgICA8ZGl2IGNsYXNzPSJiZy1pbmZvIHRleHQtd2hpdGUiPg0KICAgICAgICAgIDxwPkxvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LCBjb25zZWN0ZXR1ciBhZGlwaXNjaW5nIGVsaXQsIHNlZCBkbyBlaXVzbW9kIHRlbXBvciBpbmNpZGlkdW50IHV0IGxhYm9yZSBldCBkb2xvcmUgbWFnbmEgYWxpcXVhLiBVdCBlbmltIGFkIG1pbmltIHZlbmlhbSwgcXVpcyBub3N0cnVkIGV4ZXJjaXRhdGlvbiB1bGxhbWNvIGxhYm9yaXMgbmlzaSB1dCBhbGlxdWlwIGV4IGVhIGNvbW1vZG8gY29uc2VxdWF0LiA8L3A+DQogICAgICAgIDwvZGl2Pg0KICAgICAgPC9kaXY+DQogDQogICAgICA8L2Rpdj4NCiANCiAgICA8IS0tIE9wdGlvbmFsIEphdmFTY3JpcHQgLS0+DQogICAgPCEtLSBqUXVlcnkgZmlyc3QsIHRoZW4gUG9wcGVyLmpzLCB0aGVuIEJvb3RzdHJhcCBKUyAtLT4NCiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vanF1ZXJ5LTMuNC4xLnNsaW0ubWluLmpzIiBpbnRlZ3JpdHk9InNoYTM4NC1KNnFhNDg0OWJsRTIrcG9UNFdueUtodjV2WkY1U3JQbzBpRWp3QnZLVTdpbUdGQVYwd3dqMXlZZm9SU0pvWituIiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4NCiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L25wbS9wb3BwZXIuanNAMS4xNi4wL2Rpc3QvdW1kL3BvcHBlci5taW4uanMiIGludGVncml0eT0ic2hhMzg0LVE2RTlSSHZiSXlaRkpvZnQrMm1KYkhhRVdsZGx2STlJT1l5NW4zelY5enpUdG1JM1Vrc2RRUlZ2b3hNZm9vQW8iIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiPjwvc2NyaXB0Pg0KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL3N0YWNrcGF0aC5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC80LjQuMS9qcy9ib290c3RyYXAubWluLmpzIiBpbnRlZ3JpdHk9InNoYTM4NC13ZlNERjJFNTBZMkQxdVVkajBPM3VNQkpuanVVRDRJaDdZd2FZZDFpcWZrdGowVW9kOEdDRXhsM09nOGlmd0I2IiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4NCiAgPC9ib2R5Pg0KPC9odG1sPg==",
+  "structureValidation": {
+	"rootSelector": "html",
+  	"elementsList": ["head","meta","meta","link","title","style","body","div","div","div","a","div","a","div","div","h1","div","div","div","p","div","img","div","p","script","script","script"]
+  },
+  "valueValidations": [
+  	    {
+	  		"selector": "head>meta:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "charset",
+	  			  "value": "utf-8"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "head>meta:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "name",
+	  			  "value": "viewport"
+	  			},
+	  			{ 
+	  			  "attribute": "content",
+	  			  "value": "width=device-width, initial-scale=1, shrink-to-fit=no"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "link",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "rel",
+	  			  "value": "stylesheet"
+	  			},
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	  			},
+	  			{ 
+	  			  "attribute": "integrity",
+	  			  "value": "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	  			},
+	  			{ 
+	  			  "attribute": "crossorigin",
+	  			  "value": "anonymous"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["container-fluid"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["row", "bg-light"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(1)>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-2"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(1)>div:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-2"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["row", "bg-dark", "text-white"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(2)>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-12"]
+	  			},
+	  			{ 
+	  			  "attribute": "align",
+	  			  "value": "center"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(2)>div:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-12"]
+	  			},
+	  			{ 
+	  			  "attribute": "align",
+	  			  "value": "center"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(3)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["row"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(3)>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-md-8","col-sm-4"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(3)>div:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-md-2","col-sm-4","bg-light"]
+	  			},
+	  			{ 
+	  			  "attribute": "align",
+	  			  "value": "center"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(3)>div:nth-child(3)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-md-2","col-sm-4","bg-info","text-white"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>script:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "src",
+	  			  "value": "https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	  			},
+	  			{ 
+	  			  "attribute": "integrity",
+	  			  "value": "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+	  			},
+	  			{ 
+	  			  "attribute": "crossorigin",
+	  			  "value": "anonymous"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>script:nth-child(3)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "src",
+	  			  "value": "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	  			},
+	  			{ 
+	  			  "attribute": "integrity",
+	  			  "value": "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	  			},
+	  			{ 
+	  			  "attribute": "crossorigin",
+	  			  "value": "anonymous"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>script:nth-child(4)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "src",
+	  			  "value": "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	  			},
+	  			{ 
+	  			  "attribute": "integrity",
+	  			  "value": "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	  			},
+	  			{ 
+	  			  "attribute": "crossorigin",
+	  			  "value": "anonymous"
+	  			}
+	  		]
+	  	}
+]
+}
