@@ -1,0 +1,9 @@
+{ "content": "PCFkb2N0eXBlIGh0bWw+DQogDQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdHlsZS5jc3MiPg0KICA8L2hlYWQ+DQogDQogIDxib2R5Pg0KICAgIDxoMT5EZXBhcnRhbWVudG8gZGUgUHJvdGXDrW5hczwvaDE+DQogICAgPGRsPg0KICAgICAgPGR0PlNhbG3Ds248L2R0Pg0KICAgICAgPGRkPlByZWNpbyAkMTAgbGEgbGlicmEgc2luIGRlc2N1ZW50bzwvZGQ+DQogICAgICA8ZHQ+UG9sbG88L2R0Pg0KICAgICAgPGRkPlByZWNpbyAkNiBsYSBsaWJyYSBjb24gZGVzY3VlbnRvIGRlbCAxMCU8L2RkPg0KICAgICAgPGR0PlJlczwvZHQ+DQogICAgICA8ZGQ+UHJlY2lvICQ4IGxhIGxpYnJhIGNvbiBkZXNjdWVudG8gZGVsIDE1JTwvZGQ+DQogICAgICA8ZHQ+VG9mdTwvZHQ+DQogICAgICA8ZGQ+UHJlY2lvICQzIGxhIGxpYnJhIHNpbiBkZXNjdWVudG88L2RkPg0KICAgIDwvZGw+DQogIDwvYm9keT4NCjwvaHRtbD4NCg==",
+  "structureValidation": {
+	"rootSelector": "body",
+  	"elementsList": ["h1","dl","dt","dd","dt","dd","dt","dd","dt","dd"]
+  },
+  "valueValidations": [
+	
+  	]
+}
