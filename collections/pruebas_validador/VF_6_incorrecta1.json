@@ -1,0 +1,116 @@
+{ "content": "PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCg0KICA8aGVhZD4NCiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InN0eWxlLmNzcyI+DQogIDwvaGVhZD4NCg0KICA8Ym9keT4NCiAgICA8aDE+UmVnaXN0cm88L2gxPg0KICAgIDxmb3JtPg0KICAgICAgPGRpdj4NCiAgICAgICAgPGxhYmVsIGZvcj0nbm9tYnJlJz5Ob21icmU8L2xhYmVsPg0KICAgICAgICA8aW5wdXQgdHlwZT0ndGV4dCcgaWQ9J25vbWJyZSc+DQogICAgICA8L2Rpdj4NCiAgICAgIDxkaXY+DQogICAgICAgIDxsYWJlbCBmb3I9J2NvcnJlbyc+Q29ycmVvPC9sYWJlbD4NCiAgICAgICAgPGlucHV0IHR5cGU9J2VtYWlsJyBpZD0nY29ycmVvJz4NCiAgICAgIDwvZGl2Pg0KICAgICAgPGRpdj4NCiAgICAgICAgPGxhYmVsIGZvcj0ndXN1YXJpbyc+VXN1YXJpbzwvbGFiZWw+DQogICAgICAgIDxpbnB1dCB0eXBlPSd0ZXh0JyBpZD0ndXN1YXJpbyc+DQogICAgICA8L2Rpdj4NCiAgICAgIDxkaXY+DQogICAgICAgIDxsYWJlbCBmb3I9J2NsYXZlJz5DbGF2ZTwvbGFiZWw+DQogICAgICAgIDxpbnB1dCB0eXBlPSdwYXNzd29yZCcgaWQ9J2NsYXZlJz4NCiAgICAgIDwvZGl2Pg0KICAgICAgPGRpdj4NCiAgICAgICAgPGlucHV0IHR5cGU9J3Jlc2V0JyB2YWx1ZT0nQ2FuY2VsYXInPg0KICAgICAgICA8aW5wdXQgdHlwZT0nc3VibWl0JyB2YWx1ZT0nR3VhcmRhcic+DQogICAgICA8L2Rpdj4NCiAgICA8L2Zvcm0+DQogIDwvYm9keT4NCg0KPC9odG1sPg==",
+  "structureValidation": {
+	"rootSelector": "body",
+  	"elementsList": ["h1","form","div","label","br","input","div","label","br","input","div","label","br","input","div","label","br","input","div","input","input"]
+  },
+  "valueValidations": [
+  	{
+	  		"selector": "form>div:nth-child(1)>label",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "for",
+	  			  "value": "nombre"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "form>div:nth-child(2)>label",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "for",
+	  			  "value": "correo"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "form>div:nth-child(3)>label",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "for",
+	  			  "value": "usuario"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "form>div:nth-child(4)>label",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "for",
+	  			  "value": "clave"
+	  			}
+	  		]
+	  	},
+	{
+	  		"selector": "form>div:nth-child(1)>input",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "type",
+	  			  "value": "text"
+	  			},
+	  			{ 
+	  			  "attribute": "id",
+	  			  "value": "nombre"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "form>div:nth-child(2)>input",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "type",
+	  			  "value": "email"
+	  			},
+	  			{ 
+	  			  "attribute": "id",
+	  			  "value": "correo"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "form>div:nth-child(3)>input",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "type",
+	  			  "value": "text"
+	  			},
+	  			{ 
+	  			  "attribute": "id",
+	  			  "value": "usuario"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "form>div:nth-child(4)>input",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "type",
+	  			  "value": "password"
+	  			},
+	  			{ 
+	  			  "attribute": "id",
+	  			  "value": "clave"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "form>div:nth-child(5)>input:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "type",
+	  			  "value": "reset"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "form>div:nth-child(5)>input:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "type",
+	  			  "value": "submit"
+	  			}
+	  		]
+	  	}
+  
+
+]
+}
