@@ -1,0 +1,9 @@
+{ "content": "PCFkb2N0eXBlIGh0bWw+DQogDQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdHlsZS5jc3MiPg0KICA8L2hlYWQ+DQogDQogIDxib2R5Pg0KIA0KIDwvYm9keT4NCjwvaHRtbD4=",
+  "structureValidation": {
+	"rootSelector": "body",
+  	"elementsList": ["h1","h2","h3","p","p","h3","p","p","h2","h3","p","p","h3","p","p"]
+  },
+  "valueValidations": [
+	
+  	]
+}
