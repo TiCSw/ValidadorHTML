@@ -1,0 +1,19 @@
+{ "content": "PCFkb2N0eXBlIGh0bWw+DQogDQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdHlsZS5jc3MiPg0KICA8L2hlYWQ+DQogDQogIDxib2R5Pg0KICAgIDxoMT5WZW50YSBkZSBpbm11ZWJsZXM8L2gxPg0KICAgIDxpbWcgc3JjPSd1cmwxJyA+DQogICAgPGgyPkNhc2EgdXJiYW5hPC9icj4NCiAgICBQcmVjaW86JDIwMDwvYnI+DQogICAgVGVsZWZvbm86MTExMjIyMw0KICAgIDwvaDI+DQogICAgPGltZyBzcmM9J3VybDInID4NCiAgICA8aDI+Q2FzYSBydXJhbDwvYnI+DQogICAgUHJlY2lvOiQ2MDA8L2JyPg0KICAgIFRlbGVmb25vOjExMTIyMjQNCiAgICA8L2gyPg0KICAgIDxpbWcgc3JjPSd1cmwzJyA+DQogICAgPGgyPkFwYXJ0YW1lbnRvPC9icj4NCiAgICBQcmVjaW86JDE3MDwvYnI+DQogICAgVGVsZWZvbm86MTExMjIyNQ0KICAgIDwvaDI+DQogIDwvYm9keT4NCjwvaHRtbD4=",
+  "structureValidation": {
+	"rootSelector": "body",
+  	"elementsList": ["h1","img","h2","br","br","img","h2","br","br","img","h2","br","br"]
+  },
+  "valueValidations": [
+  	{
+	  		"selector": "img",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "width",
+	  			  "value": "200"
+	  			}
+	
+	  		]
+	  	}
+	
+  	]
+}
