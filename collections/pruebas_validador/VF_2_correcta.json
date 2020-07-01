@@ -1,0 +1,9 @@
+{ "content": "PCFkb2N0eXBlIGh0bWw+DQogDQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdHlsZS5jc3MiPg0KICA8L2hlYWQ+DQogDQogIDxib2R5Pg0KICAgIDxoMT5EZXBhcnRhbWVudG9zIHN1cGVybWVyY2FkbzwvaDE+DQogICAgPG9sPg0KICAgICAgPGxpPlZlcmR1cmFzIHkgb3Jnw6FuaWNvczwvbGk+DQogICAgICA8bGk+UHJvdGXDrW5hczwvbGk+DQogICAgICA8bGk+R3Jhbm9zPC9saT4NCiAgICAgIDxsaT5QYW5hZGVyaWE8L2xpPg0KICAgICAgPGxpPkxpbXBpZXphIHkgQXNlbzwvbGk+DQogICAgPC9vbD4NCiAgPC9ib2R5Pg0KPC9odG1sPg0K",
+  "structureValidation": {
+	"rootSelector": "body",
+  	"elementsList": ["h1","ol","li","li","li","li","li"]
+  },
+  "valueValidations": [
+	
+  	]
+}
