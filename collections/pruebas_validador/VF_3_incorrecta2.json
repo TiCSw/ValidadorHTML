@@ -1,0 +1,19 @@
+{ "content": "PCFkb2N0eXBlIGh0bWw+DQogDQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdHlsZS5jc3MiPg0KICA8L2hlYWQ+DQogDQogIDxib2R5Pg0KICAgIDxoMT5WZW50YSBkZSBpbm11ZWJsZXM8L2gxPg0KICAgIA0KICAgIDxoMj5DYXNhIHVyYmFuYTwvYnI+DQogICAgUHJlY2lvOiQyMDA8L2JyPg0KICAgIFRlbGVmb25vOjExMTIyMjMNCiAgICA8L2gyPg0KICAgIDxpbWcgc3JjPSd1cmwxJyB3aWR0aD0nMjAwJz4NCiAgICANCiAgICA8aDI+Q2FzYSBydXJhbDwvYnI+DQogICAgUHJlY2lvOiQ2MDA8L2JyPg0KICAgIFRlbGVmb25vOjExMTIyMjQNCiAgICA8L2gyPg0KICAgIDxpbWcgc3JjPSd1cmwyJyB3aWR0aD0nMjAwJz4NCiAgICANCiAgICA8aDI+QXBhcnRhbWVudG88L2JyPg0KICAgIFByZWNpbzokMTcwPC9icj4NCiAgICBUZWxlZm9ubzoxMTEyMjI1DQogICAgPC9oMj4NCiAgICA8aW1nIHNyYz0ndXJsMycgd2lkdGg9JzIwMCc+DQogIDwvYm9keT4NCjwvaHRtbD4NCg0KDQo=",
+  "structureValidation": {
+	"rootSelector": "body",
+  	"elementsList": ["h1","img","h2","br","br","img","h2","br","br","img","h2","br","br"]
+  },
+  "valueValidations": [
+  	{
+	  		"selector": "img",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "width",
+	  			  "value": "200"
+	  			}
+	
+	  		]
+	  	}
+	
+  	]
+}
