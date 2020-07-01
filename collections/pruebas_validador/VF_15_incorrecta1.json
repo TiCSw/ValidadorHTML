@@ -1,0 +1,186 @@
+{ "content": "PCFkb2N0eXBlIGh0bWw+DQo8aHRtbCBsYW5nPSJlbiI+DQogIDxoZWFkPg0KIA0KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0ic3R5bGUuY3NzIj4NCiANCiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyAxNzwvdGl0bGU+DQogIDwvaGVhZD4NCiAgPGJvZHk+DQogICAgDQogICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIiA+DQogICAgICA8aDE+RW5jdWVudHJhIGxhcyBkaWZlcmVuY2lhczwvaDE+DQogICAgICA8ZGl2IGNsYXNzPSJyb3ciPg0KICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtOCBiZy13YXJuaW5nIiBhbGlnbj0iY2VudGVyIj4NCiAgICAgICAgICBJbcOhZ2VuZXMgYSBjb21wYXJhcg0KICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyI+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtNiBiZy1zdWNjZXNzIiBhbGlnbj0iY2VudGVyIj4NCiAgICAgICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vaW1nLmljb25zOC5jb20vYnViYmxlcy8xNDAvMDAwMDAwL3N0YWNrLW9mLXBob3Rvcy5wbmciLz48L2Rpdj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC02IGJnLWRhbmdlciIgYWxpZ249ImNlbnRlciI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLmljb25zOC5jb20vY2xvdWRzLzE0MC8wMDAwMDAvc3RhY2stb2YtcGhvdG9zLnBuZyIvPjwvZGl2Pg0KICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCiAgICAgICAgPGRpdiBjbGFzcz0iY29sLTQgYmctcHJpbWFyeSI+DQogICAgICAgICAgPGg1PkNhbnRpZGFkIGRlIGRpZmVyZW5jaWFzPC9oNT4NCiAgICAgICAgICA8aW5wdXQgdHlwZT0ncmFkaW8nIGlkPSdmYW1pbGlhcic+DQogICAgICAgICAgPGxhYmVsIGZvcj0nZmFtaWxpYXInPjU8L2xhYmVsPjxicj4NCiAgICAgICAgICA8aW5wdXQgdHlwZT0ncmFkaW8nIGlkPSdmYW1pbGlhcic+DQogICAgICAgICAgPGxhYmVsIGZvcj0nZmFtaWxpYXInPjM8L2xhYmVsPjxicj4NCiAgICAgICAgICA8aW5wdXQgdHlwZT0ncmFkaW8nIGlkPSdmYW1pbGlhcic+DQogICAgICAgICAgPGxhYmVsIGZvcj0nZmFtaWxpYXInPjI8L2xhYmVsPjxicj4NCiANCiAgICAgICAgPC9kaXY+DQogICAgICA8L2Rpdj4NCiAgICA8L2Rpdj4NCiANCiAgICA8IS0tIE9wdGlvbmFsIEphdmFTY3JpcHQgLS0+DQogICAgPCEtLSBqUXVlcnkgZmlyc3QsIHRoZW4gUG9wcGVyLmpzLCB0aGVuIEJvb3RzdHJhcCBKUyAtLT4NCiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vanF1ZXJ5LTMuNC4xLnNsaW0ubWluLmpzIiBpbnRlZ3JpdHk9InNoYTM4NC1KNnFhNDg0OWJsRTIrcG9UNFdueUtodjV2WkY1U3JQbzBpRWp3QnZLVTdpbUdGQVYwd3dqMXlZZm9SU0pvWituIiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4NCiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L25wbS9wb3BwZXIuanNAMS4xNi4wL2Rpc3QvdW1kL3BvcHBlci5taW4uanMiIGludGVncml0eT0ic2hhMzg0LVE2RTlSSHZiSXlaRkpvZnQrMm1KYkhhRVdsZGx2STlJT1l5NW4zelY5enpUdG1JM1Vrc2RRUlZ2b3hNZm9vQW8iIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiPjwvc2NyaXB0Pg0KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL3N0YWNrcGF0aC5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC80LjQuMS9qcy9ib290c3RyYXAubWluLmpzIiBpbnRlZ3JpdHk9InNoYTM4NC13ZlNERjJFNTBZMkQxdVVkajBPM3VNQkpuanVVRDRJaDdZd2FZZDFpcWZrdGowVW9kOEdDRXhsM09nOGlmd0I2IiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4NCiAgPC9ib2R5Pg0KPC9odG1sPg0K",
+  "structureValidation": {
+	"rootSelector": "html",
+  	"elementsList": ["head","meta","meta","link","title","style","body","div","h1","div","div","div","div","img","div","img","div","h5","input","label","br","input","label","br","input","label","br","script","script","script"]
+  },
+  "valueValidations": [ 
+                  {
+	  		"selector": "head>meta:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "charset",
+	  			  "value": "utf-8"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "head>meta:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "name",
+	  			  "value": "viewport"
+	  			},
+	  			{ 
+	  			  "attribute": "content",
+	  			  "value": "width=device-width, initial-scale=1, shrink-to-fit=no"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "link",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "rel",
+	  			  "value": "stylesheet"
+	  			},
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	  			},
+	  			{ 
+	  			  "attribute": "integrity",
+	  			  "value": "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	  			},
+	  			{ 
+	  			  "attribute": "crossorigin",
+	  			  "value": "anonymous"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["container"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["row"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-8","bg-warning"]
+	  			},
+	  			{ 
+	  			  "attribute": "align",
+	  			  "value": "center"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div>div>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["row"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div>div>div>div:nth-child(1)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-6", "bg-success"]
+	  			},
+	  			{ 
+	  			  "attribute": "align",
+	  			  "value": "center"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div>div>div>div:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-6", "bg-danger"]
+	  			},
+	  			{ 
+	  			  "attribute": "align",
+	  			  "value": "center"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div>div:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "class",
+	  			  "value": ["col-4", "bg-primary"]
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>div>div>div>input",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "type",
+	  			  "value": "radio"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>script:nth-child(2)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "src",
+	  			  "value": "https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	  			},
+	  			{ 
+	  			  "attribute": "integrity",
+	  			  "value": "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+	  			},
+	  			{ 
+	  			  "attribute": "crossorigin",
+	  			  "value": "anonymous"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>script:nth-child(3)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "src",
+	  			  "value": "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	  			},
+	  			{ 
+	  			  "attribute": "integrity",
+	  			  "value": "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	  			},
+	  			{ 
+	  			  "attribute": "crossorigin",
+	  			  "value": "anonymous"
+	  			}
+	  		]
+	  	},
+	  	{
+	  		"selector": "body>script:nth-child(4)",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "src",
+	  			  "value": "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	  			},
+	  			{ 
+	  			  "attribute": "integrity",
+	  			  "value": "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	  			},
+	  			{ 
+	  			  "attribute": "crossorigin",
+	  			  "value": "anonymous"
+	  			}
+	  		]
+	  	}
+]
+}
