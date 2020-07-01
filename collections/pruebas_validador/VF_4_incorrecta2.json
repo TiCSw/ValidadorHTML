@@ -1,0 +1,36 @@
+{ "content": "PCFkb2N0eXBlIGh0bWw+DQogDQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdHlsZS5jc3MiPg0KICA8L2hlYWQ+DQogDQogIDxib2R5Pg0KICAgIDxoMT5Qw6FnaW5hcyByZWNvbWVuZGFkYXMgcGFyYSBhcHJlbmRlciANCiAgICAgIGlkaW9tYXM8L2gxPg0KICAgIDx1bD4NCiAgICAgIDxhIGhyZWY9J2h0dHBzOi8vd3d3LmxpdmVtb2NoYS5jby8NCiAgICAgICAgJz5saXZlbW9jaGE8L2E+DQogICAgICA8YSBocmVmPSdodHRwczovL2VzLmR1b2xpbmdvLmNvbS8NCiAgICAgICAgJz5kdW9saW5nbzwvYT4NCiAgICAgIDxhIGhyZWY9J2h0dHBzOi8vd3d3Lml0YWxraS5jb20vDQogICAgICAgICc+aXRhbGtpPC9hPg0KICAgIDwvdWw+DQogICAgDQogIDwvYm9keT4NCjwvaHRtbD4=",
+  "structureValidation": {
+	"rootSelector": "body",
+  	"elementsList": ["h1","ul","li","a","li","a","li","a"]
+  },
+  "valueValidations": [
+  	{
+	  		"selector": "ul>li:nth-child(1)>a",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "https://www.livemocha.co/"
+	  			}
+	  		]
+	  	},
+	 {
+	  		"selector": "ul>li:nth-child(2)>a",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "https://es.duolingo.com/"
+	  			}
+	  		]
+	  	}, 	
+	  {
+	  		"selector": "ul>li:nth-child(3)>a",
+	  		"expectedValues": [
+	  			{ 
+	  			  "attribute": "href",
+	  			  "value": "https://www.italki.com/"
+	  			}
+	  		]
+	  	}	
+	
+  	]
+}
