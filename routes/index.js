@@ -1,11 +1,7 @@
 var express = require("express");
 var router = express.Router();
 
-const {
-  domValidation,
-  parseHTML2JSON,
-  parseCSS2JSON,
-} = require("../validator");
+const { domValidation, parseHTML2JSON, parseCSS2JSON } = require("../lib/validator");
 
 router.get("/", function (req, res, next) {
   res.json({ version: "1.0.0", name: "html-validator" });
@@ -19,12 +15,7 @@ router.post("/", (req, res) => {
   let htmlBuffer = Buffer.from(htmlContent, "base64");
   let cssBuffer = Buffer.from(cssContent, "base64");
 
-  const result = domValidation(
-    htmlBuffer,
-    cssBuffer,
-    htmlStructure,
-    cssStructure
-  );
+  const result = domValidation(htmlBuffer, cssBuffer, htmlStructure, cssStructure);
   res.json(result);
 });
 
