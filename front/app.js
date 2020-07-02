@@ -1,6 +1,7 @@
 const url = new URL(window.location.href);
 const type = url.searchParams.get("type");
 const exercise = url.searchParams.get("exercise");
+const key = url.searchParams.get("key");
 
 initializeDivs();
 
@@ -57,6 +58,7 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
         htmlStructure: data.htmlStructure,
         cssContent,
         cssStructure: data.cssStructure,
+        key,
       };
       fetch("http://localhost:3001", {
         method: "POST",
