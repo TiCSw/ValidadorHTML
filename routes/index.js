@@ -1,11 +1,8 @@
 var express = require("express");
 var router = express.Router();
-var CryptoJS = require("crypto-js");
 
 const { domValidation, parseHTML2JSON, parseCSS2JSON } = require("../lib/validator");
 const lti = require("../lib/lti");
-
-const APP_ENCRYPTION_KEY = process.env.APP_ENCRYPTION_KEY || "ecb16a3932b0467629779c11d545d44e";
 
 router.post("/", (req, res) => {
   const {
@@ -14,11 +11,17 @@ router.post("/", (req, res) => {
 
   let htmlBuffer = Buffer.from(htmlContent, "base64");
   let cssBuffer = Buffer.from(cssContent, "base64");
-  let keyBuffer = Buffer.from(key, "base64").toString();
-  let jsonKeyBuffer = JSON.parse(keyBuffer);
-
+  if (key) {
+    let keyBuffer = Buffer.from(key, "base64").toString();
+    const { lis_outcome_service_url, lis_result_sourcedid } = JSON.parse(keyBuffer);
+    /*lti
+      .sendResultToCoursera(lis_outcome_service_url, lis_result_sourcedid, parseFloat(result.grade))
+      .then((res) => {})
+      .catch((error) => {
+        console.log("Error when sending results to Coursera: ", error);
+      });*/
+  }
   const result = domValidation(htmlBuffer, cssBuffer, htmlStructure, cssStructure);
-  //lti.sendResultToCoursera(jsonKeyBuffer.lis_outcome_service_url, jsonKeyBuffer.lis_result_sourcedid, result.grade);
   res.json(result);
 });
 
