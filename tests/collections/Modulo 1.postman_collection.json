@@ -1,0 +1,511 @@
+{
+	"info": {
+		"_postman_id": "bc6489ec-a5c9-46db-8927-8d2694037c59",
+		"name": "Modulo 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "VF_1_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5c2f530a-452b-4623-a190-a865d2dd04bf",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CiAKPGh0bWw+CiAgPGhlYWQ+CiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyAxIDwvdGl0bGU+CiAgPC9oZWFkPgogCiAgPGJvZHk+CiAgICA8aDE+TG9zIGTDrWFzIGRlIGxhIHNlbWFuYTwvaDE+CiAgICA8aDI+THVuZXM8L2gyPgogICAgPGgzPkVuIGxhIG1hw7FhbmE8L2gzPgogICAgPHA+TG9zIGx1bmVzIGluaWNpbyBtaSBzZW1hbmEgdG9tYW5kbyBjYWbDqSB5IGNvbWllbmRvIHVuIHBhbi4gQWRpY2lvbmFsbWVudGUsIG1lIGd1c3RhIHByZXBhcmFyIHRvcnRpbGxhcyBkZSBodWV2by4KICAgIDwvcD4KICAgIDxwPkx1ZWdvIGRlIGRlc2F5dW5hciBtZSBhbGlzdG8gcGFyYSBpciBhbCB0cmFiYWpvLCBub3JtYWxtZW50ZSBtZSB2b3kgZW4gYmljaWNsZXRhLgogICAgPC9wPgogICAgPGgzPkVuIGxhIHRhcmRlPC9oMz4KICAgIDxwPlBvciBsYSB0YXJkZSwgbHVlZ28gZGUgc2FsaXIgYSBhbG1vcnphciBjb24gbWlzIGNvbXBhw7Flcm9zIGRlIHRyYWJham8sIHRlbmdvIHF1ZSBhc2lzdGlyIGEgMiByZXVuaW9uZXMuPC9wPgogICAgPHA+THVlZ28gZGUgdGVybWluYXIgbGEgc2VndW5kYSByZXVuacOzbiBtZSBkZXZ1ZWx2byBhIG1pIGNhc2EgZW4gYmljaWNsZXRhLgogICAgPC9wPgogICAgPGgyPk1hcnRlczwvaDI+CiAgICA8aDM+RW4gbGEgbWHDsWFuYTwvaDM+CiAgICA8cD5Mb3MgbWFydGVzIGRlc2F5dW5vIGZydXRhcyB5IHRvc3RhZGFzIGZyYW5jZXNhcy4gVGFtYmnDqW4gbWUgcHJlcGFybyB1biBjYWbDqSBjb24gbGVjaGUgYW50ZXMgZGUgYWxpc3Rhcm1lIHBhcmEgc2FsaXIuIAogICAgPC9wPgogICAgPHA+TG9zIG1hcnRlcyB1biBhbWlnbyBtZSBsbGV2YSBhbCB0cmFiYWpvLCBwb3IgbG8gcXVlIGVzcGVybyBlbiBsYSBhdmVuaWRhIGEgcXVlIHBhc2UgcG9yIG1pLgogICAgPC9wPgogICAgPGgzPkVuIGxhIHRhcmRlPC9oMz4KICAgIDxwPkVuIGxhIHRhcmRlIGFsbXVlcnpvIGNvbiBtaSBqZWZlLCBwYXJhIHBsYW5pZmljYXIgbGFzIHZlbnRhcyBkZSBsYSBzZW1hbmEuPC9wPgogICAgPHA+QSBsYXMgNTowMHBtIHZ1ZWx2byBhIG1pIGNhc2EgZW4gYnVzLgogICAgPC9wPgogIDwvYm9keT4KPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\":\"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_1_1 con más elementos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "be3bb8c2-2fe3-474e-a35e-ba15ba6d91be",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CiAKPGh0bWw+CiAgPGhlYWQ+CiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyAxIDwvdGl0bGU+CiAgPC9oZWFkPgogCiAgPGJvZHk+CjxjZW50ZXI+PHA+SG9sYSBtdW5kbzwvcD48L2NlbnRlcj4KICAgIDxoMT5Mb3MgZMOtYXMgZGUgbGEgc2VtYW5hPC9oMT4KICAgIDxoMj5MdW5lczwvaDI+CiAgICA8aDM+RW4gbGEgbWHDsWFuYTwvaDM+CiAgICA8cD5Mb3MgbHVuZXMgaW5pY2lvIG1pIHNlbWFuYSB0b21hbmRvIGNhZsOpIHkgY29taWVuZG8gdW4gcGFuLiBBZGljaW9uYWxtZW50ZSwgbWUgZ3VzdGEgcHJlcGFyYXIgdG9ydGlsbGFzIGRlIGh1ZXZvLgogICAgPC9wPgogICAgPHA+THVlZ28gZGUgZGVzYXl1bmFyIG1lIGFsaXN0byBwYXJhIGlyIGFsIHRyYWJham8sIG5vcm1hbG1lbnRlIG1lIHZveSBlbiBiaWNpY2xldGEuCiAgICA8L3A+CiAgICA8aDM+RW4gbGEgdGFyZGU8L2gzPgogICAgPHA+UG9yIGxhIHRhcmRlLCBsdWVnbyBkZSBzYWxpciBhIGFsbW9yemFyIGNvbiBtaXMgY29tcGHDsWVyb3MgZGUgdHJhYmFqbywgdGVuZ28gcXVlIGFzaXN0aXIgYSAyIHJldW5pb25lcy48L3A+CiAgICA8cD5MdWVnbyBkZSB0ZXJtaW5hciBsYSBzZWd1bmRhIHJldW5pw7NuIG1lIGRldnVlbHZvIGEgbWkgY2FzYSBlbiBiaWNpY2xldGEuCiAgICA8L3A+CiAgICA8aDI+TWFydGVzPC9oMj4KICAgIDxoMz5FbiBsYSBtYcOxYW5hPC9oMz4KICAgIDxwPkxvcyBtYXJ0ZXMgZGVzYXl1bm8gZnJ1dGFzIHkgdG9zdGFkYXMgZnJhbmNlc2FzLiBUYW1iacOpbiBtZSBwcmVwYXJvIHVuIGNhZsOpIGNvbiBsZWNoZSBhbnRlcyBkZSBhbGlzdGFybWUgcGFyYSBzYWxpci4gCiAgICA8L3A+CiAgICA8cD5Mb3MgbWFydGVzIHVuIGFtaWdvIG1lIGxsZXZhIGFsIHRyYWJham8sIHBvciBsbyBxdWUgZXNwZXJvIGVuIGxhIGF2ZW5pZGEgYSBxdWUgcGFzZSBwb3IgbWkuCiAgICA8L3A+CiAgICA8aDM+RW4gbGEgdGFyZGU8L2gzPgogICAgPHA+RW4gbGEgdGFyZGUgYWxtdWVyem8gY29uIG1pIGplZmUsIHBhcmEgcGxhbmlmaWNhciBsYXMgdmVudGFzIGRlIGxhIHNlbWFuYS48L3A+CiAgICA8cD5BIGxhcyA1OjAwcG0gdnVlbHZvIGEgbWkgY2FzYSBlbiBidXMuCiAgICA8L3A+CiAgPC9ib2R5Pgo8L2h0bWw+Cg==\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\":\"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_1_1 con menos elementos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0deb7397-307b-440f-9262-1434b4dc7d23",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(false);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CiAKPGh0bWw+CiAgPGhlYWQ+CiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyAxIDwvdGl0bGU+CiAgPC9oZWFkPgogCiAgPGJvZHk+CiAgICA8aDI+THVuZXM8L2gyPgogICAgPGgzPkVuIGxhIG1hw7FhbmE8L2gzPgogICAgPHA+TG9zIGx1bmVzIGluaWNpbyBtaSBzZW1hbmEgdG9tYW5kbyBjYWbDqSB5IGNvbWllbmRvIHVuIHBhbi4gQWRpY2lvbmFsbWVudGUsIG1lIGd1c3RhIHByZXBhcmFyIHRvcnRpbGxhcyBkZSBodWV2by4KICAgIDwvcD4KICAgIDxwPkx1ZWdvIGRlIGRlc2F5dW5hciBtZSBhbGlzdG8gcGFyYSBpciBhbCB0cmFiYWpvLCBub3JtYWxtZW50ZSBtZSB2b3kgZW4gYmljaWNsZXRhLgogICAgPC9wPgogICAgPGgzPkVuIGxhIHRhcmRlPC9oMz4KICAgIDxwPlBvciBsYSB0YXJkZSwgbHVlZ28gZGUgc2FsaXIgYSBhbG1vcnphciBjb24gbWlzIGNvbXBhw7Flcm9zIGRlIHRyYWJham8sIHRlbmdvIHF1ZSBhc2lzdGlyIGEgMiByZXVuaW9uZXMuPC9wPgogICAgPHA+THVlZ28gZGUgdGVybWluYXIgbGEgc2VndW5kYSByZXVuacOzbiBtZSBkZXZ1ZWx2byBhIG1pIGNhc2EgZW4gYmljaWNsZXRhLgogICAgPC9wPgogICAgPGgyPk1hcnRlczwvaDI+CiAgICA8aDM+RW4gbGEgbWHDsWFuYTwvaDM+CiAgICA8cD5Mb3MgbWFydGVzIGRlc2F5dW5vIGZydXRhcyB5IHRvc3RhZGFzIGZyYW5jZXNhcy4gVGFtYmnDqW4gbWUgcHJlcGFybyB1biBjYWbDqSBjb24gbGVjaGUgYW50ZXMgZGUgYWxpc3Rhcm1lIHBhcmEgc2FsaXIuIAogICAgPC9wPgogICAgPHA+TG9zIG1hcnRlcyB1biBhbWlnbyBtZSBsbGV2YSBhbCB0cmFiYWpvLCBwb3IgbG8gcXVlIGVzcGVybyBlbiBsYSBhdmVuaWRhIGEgcXVlIHBhc2UgcG9yIG1pLgogICAgPC9wPgogICAgPGgzPkVuIGxhIHRhcmRlPC9oMz4KICAgIDxwPkVuIGxhIHRhcmRlIGFsbXVlcnpvIGNvbiBtaSBqZWZlLCBwYXJhIHBsYW5pZmljYXIgbGFzIHZlbnRhcyBkZSBsYSBzZW1hbmEuPC9wPgogICAgPHA+QSBsYXMgNTowMHBtIHZ1ZWx2byBhIG1pIGNhc2EgZW4gYnVzLgogICAgPC9wPgogIDwvYm9keT4KPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"h3\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"p\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\":\"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "32305d8a-5055-4cec-b783-aa2b69a3f8cd",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHRpdGxlPlJlc3B1ZXN0YSBlamVyY2ljaW8gMiA8L3RpdGxlPgogIDwvaGVhZD4KIAogIDxib2R5PgogICAgPGgxPkRlcGFydGFtZW50b3Mgc3VwZXJtZXJjYWRvPC9oMT4KICAgIDxvbD4KICAgICAgPGxpPlZlcmR1cmFzIHkgb3Jnw6FuaWNvczwvbGk+CiAgICAgIDxsaT5Qcm90ZcOtbmFzPC9saT4KICAgICAgPGxpPkdyYW5vczwvbGk+CiAgICAgIDxsaT5QYW5hZGVyaWE8L2xpPgogICAgICA8bGk+TGltcGllemEgeSBBc2VvPC9saT4KICAgIDwvb2w+CiAgPC9ib2R5Pgo8L2h0bWw+\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"ol\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_1 con más elementos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a2cd6316-d9b3-479d-8146-3da422d8f48e",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHRpdGxlPlJlc3B1ZXN0YSBlamVyY2ljaW8gMiA8L3RpdGxlPgogIDwvaGVhZD4KIAogIDxib2R5PgogICAgPGgxPkRlcGFydGFtZW50b3Mgc3VwZXJtZXJjYWRvPC9oMT4KPGgyPkRlcGFydGFtZW50byBwcmluY2lwYWw8L2gyPgogICAgPG9sPgogICAgICA8bGk+VmVyZHVyYXMgeSBvcmfDoW5pY29zPC9saT4KICAgICAgPGxpPlByb3Rlw61uYXM8L2xpPgogICAgICA8bGk+R3Jhbm9zPC9saT4KICAgICAgPGxpPlBhbmFkZXJpYTwvbGk+CiAgICAgIDxsaT5MaW1waWV6YSB5IEFzZW88L2xpPgogICAgPC9vbD4KICA8L2JvZHk+CjwvaHRtbD4=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"ol\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_1 con menos elementos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "49731e77-4c63-4cac-9238-8fc311bd3cab",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(false);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHRpdGxlPlJlc3B1ZXN0YSBlamVyY2ljaW8gMiA8L3RpdGxlPgogIDwvaGVhZD4KIAogIDxib2R5PgogICAgPGgyPkRlcGFydGFtZW50b3Mgc3VwZXJtZXJjYWRvPC9oMj4KICAgIDxvbD4KICAgICAgPGxpPlZlcmR1cmFzIHkgb3Jnw6FuaWNvczwvbGk+CiAgICAgIDxsaT5Qcm90ZcOtbmFzPC9saT4KICAgICAgPGxpPlBhbmFkZXJpYTwvbGk+CiAgICAgIDxsaT5MaW1waWV6YSB5IEFzZW88L2xpPgogICAgPC9vbD4KICA8L2JvZHk+CjwvaHRtbD4=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"ol\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fb7be783-1a32-455d-983e-1847d9c2147e",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PGh0bWw+CiAgPGhlYWQ+CiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyAzPC90aXRsZT4KICA8L2hlYWQ+CiAKICA8Ym9keT4KICAgIDxoMT5EZXBhcnRhbWVudG8gZGUgVmVyZHVyYXMgeSBvcmfDoW5pY29zPC9oMT4KICAgIDx1bD4KICAgICAgPGxpPkJyw7Njb2xpPC9saT4KICAgICAgPGxpPlRvbWF0ZTwvbGk+CiAgICAgIDxsaT5DZWJvbGxhPC9saT4KICAgICAgPGxpPlBpbWVudMOzbjwvbGk+CiAgICA8L3VsPgogIDwvYm9keT4KPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"ul\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_2 con más elementos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d5c7a9f-9556-4353-8fb8-82a481c8bab8",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PGh0bWw+CiAgPGhlYWQ+CiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyAzPC90aXRsZT4KICA8L2hlYWQ+CiAKICA8Ym9keT4KICAgIDxoMT5EZXBhcnRhbWVudG8gZGUgVmVyZHVyYXMgeSBvcmfDoW5pY29zPC9oMT4KICAgIDx1bD4KICAgICAgPGxpPkJyw7Njb2xpPC9saT4KICAgICAgPGxpPlRvbWF0ZTwvbGk+CiAgICAgIDxsaT5DZWJvbGxhPC9saT4KICAgICAgPGxpPlBpbWVudMOzbjwvbGk+CiAgICAgIDxsaT5aYW5haG9yaWE8L2xpPgogICAgICA8bGk+UGFwYTwvbGk+CiAgICA8L3VsPgogIDwvYm9keT4KPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"ul\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_2 con menos elementos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5ccf3c94-0de7-417d-be1e-03a29a9f3e17",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(false);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PGh0bWw+CiAgPGhlYWQ+CiAgICA8dGl0bGU+UmVzcHVlc3RhIGVqZXJjaWNpbyAzPC90aXRsZT4KICA8L2hlYWQ+CiAKICA8Ym9keT4KICAgIDxoMT5EZXBhcnRhbWVudG8gZGUgVmVyZHVyYXMgeSBvcmfDoW5pY29zPC9oMT4KICAgIDxvbD4KICAgICAgPGxpPkJyw7Njb2xpPC9saT4KICAgICAgPGxpPlRvbWF0ZTwvbGk+CiAgICAgIDxsaT5DZWJvbGxhPC9saT4KICAgICAgPGxpPlBpbWVudMOzbjwvbGk+CiAgICA8L29sPgogIDwvYm9keT4KPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"ul\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    },\n                                    {\n                                        \"tag\": \"li\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1bda7326-ab09-4691-a7e5-aa04c08c6bf2",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHRpdGxlPlJlc3B1ZXN0YSBlamVyY2ljaW8gNDwvdGl0bGU+CiAgPC9oZWFkPgogCiAgPGJvZHk+CiAgICA8aDE+RGVwYXJ0YW1lbnRvIGRlIFByb3Rlw61uYXM8L2gxPgogICAgPGRsPgogICAgICA8ZHQ+U2FsbcOzbjwvZHQ+CiAgICAgIDxkZD5QcmVjaW8gJDEwIGxhIGxpYnJhIHNpbiBkZXNjdWVudG88L2RkPgogICAgICA8ZHQ+UG9sbG88L2R0PgogICAgICA8ZGQ+UHJlY2lvICQ2IGxhIGxpYnJhIGNvbiBkZXNjdWVudG8gZGVsIDEwJTwvZGQ+CiAgICAgIDxkdD5SZXM8L2R0PgogICAgICA8ZGQ+UHJlY2lvICQ4IGxhIGxpYnJhIGNvbiBkZXNjdWVudG8gZGVsIDE1JTwvZGQ+CiAgICAgIDxkdD5Ub2Z1PC9kdD4KICAgICAgPGRkPlByZWNpbyAkMyBsYSBsaWJyYSBzaW4gZGVzY3VlbnRvPC9kZD4KICAgIDwvZGw+CiAgPC9ib2R5Pgo8L2h0bWw+Cg==\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"dl\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_3 con más elementos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "128633b4-35af-4683-a7b4-9dc5e97b485b",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHRpdGxlPlJlc3B1ZXN0YSBlamVyY2ljaW8gNDwvdGl0bGU+CiAgPC9oZWFkPgogCiAgPGJvZHk+CiAgICA8aDE+RGVwYXJ0YW1lbnRvIGRlIFByb3Rlw61uYXM8L2gxPgo8dWw+PGxpPlVuIGl0ZW0gZW4gdW5hIGxpc3RhIGRlIHZpw7FldGFzPC9saT48L3VsPgogICAgPGRsPgogICAgICA8ZHQ+U2FsbcOzbjwvZHQ+CiAgICAgIDxkZD5QcmVjaW8gJDEwIGxhIGxpYnJhIHNpbiBkZXNjdWVudG88L2RkPgogICAgICA8ZHQ+UG9sbG88L2R0PgogICAgICA8ZGQ+UHJlY2lvICQ2IGxhIGxpYnJhIGNvbiBkZXNjdWVudG8gZGVsIDEwJTwvZGQ+CiAgICAgIDxkdD5SZXM8L2R0PgogICAgICA8ZGQ+UHJlY2lvICQ4IGxhIGxpYnJhIGNvbiBkZXNjdWVudG8gZGVsIDE1JTwvZGQ+CiAgICAgIDxkdD5Ub2Z1PC9kdD4KICAgICAgPGRkPlByZWNpbyAkMyBsYSBsaWJyYSBzaW4gZGVzY3VlbnRvPC9kZD4KICAgIDwvZGw+CiAgPC9ib2R5Pgo8L2h0bWw+Cg==\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"dl\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VF_2_3 con menos elementos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHRpdGxlPlJlc3B1ZXN0YSBlamVyY2ljaW8gNDwvdGl0bGU+CiAgPC9oZWFkPgogCiAgPGJvZHk+CiAgICA8aDE+RGVwYXJ0YW1lbnRvIGRlIFByb3Rlw61uYXM8L2gxPgogIDwvYm9keT4KPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"dl\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    },\n                                    {\n                                        \"tag\": \"dt\"\n                                    },\n                                    {\n                                        \"tag\": \"dd\"\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
