@@ -60,7 +60,7 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
         cssStructure: data.cssStructure,
         key,
       };
-      fetch("http://localhost:3001", {
+      fetch("http://localhost:8000", {
         method: "POST",
         body: JSON.stringify(payload),
         headers: {
@@ -73,7 +73,6 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
           document.getElementById("general-errors").innerHTML = `Ocurrió un error durante la validación: ${error}`;
         })
         .then((res) => {
-          console.log(res.differencesHTML);
           renderResponse(res.isHtmlValid, res.differencesHTML, res.isCSSValid, res.differencesCSS, res.grade);
           drawTree(res.htmlInputStructure, "#source");
           drawTree(res.htmlExpectedStructure, "#target");
