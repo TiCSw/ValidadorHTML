@@ -34,6 +34,7 @@
 
       <h2>Validador de HTML & CSS</h2>
       <div id="form-container">
+        <input type="hidden" name="_csrf" value="<%= csrftoken %>">
         <form id="fileForm" method="POST">
           <div class="form-group text-left" id="formType1">
             <label for="fileHTML">Seleccione el archivo html para el ejercicio</label>
