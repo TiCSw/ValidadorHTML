@@ -15,11 +15,21 @@ function initializeDivs() {
   document.getElementById("general-errors").hidden = true;
 }
 
+document.getElementById("retry").onclick = function (event) {
+  event.preventDefault();
+  window.location.href = `/?type=${type}&exercise=${exercise}&key=${key}`;
+};
+
 document.getElementById("fileForm").onchange = function (event) {
   event.preventDefault();
-  if (type === "1" && document.getElementById("fileHTML").files.length > 0) document.getElementById("submit").disabled = false;
+  if (type === "1" && document.getElementById("fileHTML").files.length > 0)
+    document.getElementById("submit").disabled = false;
 
-  if (type === "2" && document.getElementById("fileHTML").files.length > 0 && document.getElementById("fileCSS").files.length > 0)
+  if (
+    type === "2" &&
+    document.getElementById("fileHTML").files.length > 0 &&
+    document.getElementById("fileCSS").files.length > 0
+  )
     document.getElementById("submit").disabled = false;
 };
 
@@ -70,10 +80,18 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
         .then((res) => res.json())
         .catch((error) => {
           document.getElementById("general-errors").hidden = false;
-          document.getElementById("general-errors").innerHTML = `Ocurrió un error durante la validación: ${error}`;
+          document.getElementById(
+            "general-errors"
+          ).innerHTML = `<p>Ocurrió un error durante la validación: ${error}</p><p>Por favor contacte a su tutor </p>`;
         })
         .then((res) => {
-          renderResponse(res.isHtmlValid, res.differencesHTML, res.isCSSValid, res.differencesCSS, res.grade);
+          renderResponse(
+            res.isHtmlValid,
+            res.differencesHTML,
+            res.isCSSValid,
+            res.differencesCSS,
+            res.grade
+          );
           drawTree(res.htmlInputStructure, "#source");
           drawTree(res.htmlExpectedStructure, "#target");
         });
@@ -92,13 +110,21 @@ function returnFile(file, callback) {
   };
 }
 
-function renderResponse(isHtmlValid, differencesHTML, isCSSValid, differencesCSS, grade) {
+function renderResponse(
+  isHtmlValid,
+  differencesHTML,
+  isCSSValid,
+  differencesCSS,
+  grade
+) {
   document.getElementById("validation-html").hidden = false;
   if (type === "2") {
     document.getElementById("validation-css").hidden = false;
   }
   if (isHtmlValid) {
-    document.getElementById("structureResult-html").innerHTML = `<p>La estructura del archivo html proporcionado es válida</p><p>Nota: ${grade}</p>`;
+    document.getElementById(
+      "structureResult-html"
+    ).innerHTML = `<p>La estructura del archivo html proporcionado es válida</p><p>Nota: ${grade}</p>`;
     document.getElementById("structureResult-html").className = "text-success";
   } else {
     document.getElementById("details-html").hidden = false;
@@ -108,18 +134,24 @@ function renderResponse(isHtmlValid, differencesHTML, isCSSValid, differencesCSS
     ).innerHTML = `<p>La estructura del archivo html proporcionado no es válida</p><p>Nota: ${grade}</p>`;
     document.getElementById("structureResult-html").className = "text-danger";
 
-    document.getElementById("errors-html-list").innerHTML = differencesHTML.map((e) => `<li>${e.message} ${e.value} </li>`).join("");
+    document.getElementById("errors-html-list").innerHTML = differencesHTML
+      .map((e) => `<li>${e.message} ${e.value} </li>`)
+      .join("");
   }
 
   if (isCSSValid) {
-    document.getElementById("structureResult-css").innerHTML = "La estructura del archivo css proporcionado es válida";
+    document.getElementById("structureResult-css").innerHTML =
+      "La estructura del archivo css proporcionado es válida";
     document.getElementById("structureResult-css").className = "text-success";
   } else {
     document.getElementById("errors-css").hidden = false;
-    document.getElementById("structureResult-css").innerHTML = "La estructura del archivo css proporcionado no es válida";
+    document.getElementById("structureResult-css").innerHTML =
+      "La estructura del archivo css proporcionado no es válida";
     document.getElementById("structureResult-css").className = "text-danger";
 
-    document.getElementById("errors-css-list").innerHTML = differencesCSS.map((e) => `<li>${e}</li>`).join("");
+    document.getElementById("errors-css-list").innerHTML = differencesCSS
+      .map((e) => `<li>${e}</li>`)
+      .join("");
   }
 }
 
@@ -185,7 +217,6 @@ function drawTree(treeData, div) {
       .append("circle")
       .attr("r", 1e-6)
       .style("fill", function (d) {
-        console.log("------>", d);
         return d._children ? "lightsteelblue" : "#fff";
       });
 
