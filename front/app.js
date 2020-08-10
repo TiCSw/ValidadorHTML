@@ -82,7 +82,8 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
           document.getElementById("general-errors").hidden = false;
           document.getElementById(
             "general-errors"
-          ).innerHTML = `<p>Ocurrió un error durante la validación: ${error}</p><p>Por favor contacte a su tutor </p>`;
+          ).innerHTML = `<p>Ocurrió un error durante la validación: ${error}</p><p>Por favor póngase en contacto con Juan Pablo Reyes al correo jp.reyes39@uniandes.edu.co, 
+            quién para que le indique los pasos a seguir. </p>`;
         })
         .then((res) => {
           renderResponse(
