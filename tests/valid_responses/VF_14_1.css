@@ -1,11 +1,10 @@
-p.primero{
+.primero {
   font-style: italic;
 }
-p.segundo{
+.segundo {
   font-weight: bold;
 }
-p.tercero{
+.tercero {
   font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-
