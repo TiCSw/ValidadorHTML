@@ -1,0 +1,189 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "title"
+              },
+              {
+                "tag": "meta",
+                "attr": {
+                  "name": "author",
+                  "content": ["John", "Doe"]
+                }
+              },
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "table",
+                "children": [
+                  {
+                    "tag": "thead",
+                    "children": [
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "th"
+                          },
+                          {
+                            "tag": "th"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tbody",
+                    "children": [
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td",
+                            "children": [
+                              {
+                                "tag": "a",
+                                "attr": {
+                                  "href": "home"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td",
+                            "children": [
+                              {
+                                "tag": "a",
+                                "attr": {
+                                  "href": "blog"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td"
+                          },
+                          {
+                            "tag": "td",
+                            "children": [
+                              {
+                                "tag": "a",
+                                "attr": {
+                                  "href": "galeria"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "form",
+                "children": [
+                  {
+                    "tag": "label",
+                    "attr": {
+                      "for": "pclave"
+                    }
+                  },
+                  {
+                    "tag": "input",
+                    "attr": {
+                      "type": "text",
+                      "id": "pclave"
+                    }
+                  },
+                  {
+                    "tag": "br"
+                  },
+                  {
+                    "tag": "br"
+                  },
+                  {
+                    "tag": "label",
+                    "attr": {
+                      "for": "autor"
+                    }
+                  },
+                  {
+                    "tag": "input",
+                    "attr": {
+                      "type": "text",
+                      "id": "autor"
+                    }
+                  },
+                  {
+                    "tag": "br"
+                  },
+                  {
+                    "tag": "br"
+                  },
+                  {
+                    "tag": "input",
+                    "attr": {
+                      "type": "reset",
+                      "value": "Restablecer"
+                    }
+                  },
+                  {
+                    "tag": "input",
+                    "attr": {
+                      "type": "submit",
+                      "value": "Buscar"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {}
+}

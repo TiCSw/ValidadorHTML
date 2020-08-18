@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "31705086-045e-4f48-b118-f44ca30dd00b",
+		"_postman_id": "c90f116e-47bf-4e33-95ce-72c41fe54f0b",
 		"name": "Modulo 2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "2d3517ef-6583-4359-a976-4c0ff09c0db6",
+						"id": "003949a6-72f8-40b3-9e9c-5850c8a6f44c",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -54,7 +54,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d7c885aa-7c6d-405f-a5a4-17002fbcdfc0",
+						"id": "ce1cb872-2614-425d-894f-3697ed955fab",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -97,7 +97,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6038d03a-ac0b-44a0-b1a8-cfead0f7fdc1",
+						"id": "78c390e7-676c-4edf-8bac-b0980bdb15a4",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -140,7 +140,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "7a4dcc8b-28c0-4331-974c-98da6a195d26",
+						"id": "16e9d170-ce0b-4543-a1af-c1dc4a90cd6c",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -183,7 +183,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "30b5089b-234f-4eef-84d8-4457d2238bb8",
+						"id": "ad132292-3db7-40c9-a572-f2a90e268256",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -226,7 +226,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f7ba04e5-5079-41f7-b816-8da72d733981",
+						"id": "b78787f6-fbe8-486d-9769-13e40d2ed3cb",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -269,7 +269,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "db758a8b-fc4e-4329-ab46-49701465f14a",
+						"id": "518358f0-a6ca-46e7-bb58-f7d482d25b68",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -312,7 +312,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "3cc8edf1-07b8-41b9-ab9f-5f8e76136a80",
+						"id": "623c4631-3baa-46f5-8061-c92912ba2d85",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -355,7 +355,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "76998a53-f100-4d04-8f7c-1cbfb374f7ba",
+						"id": "6c223a8f-beca-422a-9e50-12c3f4bd6084",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -398,7 +398,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f764b8c6-78ba-4355-8afd-ba8ecdda76e4",
+						"id": "216e1910-d3e5-44bf-ab37-7b390048dd33",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -441,7 +441,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "1095e020-40c7-46b9-982c-a72b4d5c994b",
+						"id": "21853575-6cf7-43ac-a249-92b5cc15f6ff",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -484,7 +484,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5802da62-5955-4b99-ba75-39da22204c95",
+						"id": "730a1c25-f9ac-449d-8940-7b22d55e5270",
 						"exec": [
 							"pm.test(\"Valid HTML\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -585,6 +585,49 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\n    \"htmlContent\": \"PCFET0NUWVBFIGh0bWw+CjxodG1sPgoKICA8aGVhZD4KICAgIDx0aXRsZT5KYXJkaW5lcsOtYSB5IGhlcmJvdGVyYXBpYTwvdGl0bGU+CiAgICA8YmFzZSBocmVmPSJodHRwczovL3d3dy5lc2N1ZWxhZGVqYXJkaW4uY29tLyI+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InRoZW1lLmNzcyI+CiAgICA8bWV0YSBuYW1lPSJhdXRob3IiIGNvbnRlbnQ9Ikp1YW4gZGUgRmlsYWRlbGZpYSI+CiAgICA8bWV0YSBuYW1lPSJrZXl3b3JkcyIgY29udGVudD0iaHRtbCwgamF2YXNjcmlwdCwgY3NzIj4KICA8L2hlYWQ+CgogIDxib2R5PgogICAgPGgxPkphcmRpbmVyw61hIHkgaGVyYm90ZXJhcGlhPC9oMT4KICAgIDxoMj5CaWVudmVuaWRvIGEgdHUgamFyZMOtbiBkZSBwYXo8L2gyPgogICAgPGltZyBhbHQ9ImZsb3IxIiBoZWlnaHQ9IjYwIj4KICAgIDxwPkhheiBjbGljayBhcXXDrSBwYXJhIHJldmlzYXIgdGlwcyBkZSBqYXJkaW5lcsOtYTwvcD4KICAgIDxhIGhyZWY9ImphcmRpbmVyaWEiPkphcmRpbmVyw61hPC9hPgogICAgPHA+SGF6IGNsaWNrIGFxdcOtIHBhcmEgcmV2aXNhciB0aXBzIGRlIGhlYm90ZXJhcGlhPC9wPgogICAgPGEgaHJlZj0iaGVyYm90ZXJhcGlhIj5IZXJib3RlcmFwaWE8L2E+CiAgPC9ib2R5PgoKPC9odG1sPgo=\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            },\n                            {\n                                \"tag\": \"base\",\n                                \"attr\": {\n                                    \"href\": \"https://www.escueladejardin.com/\"\n                                }\n                            },\n                            {\n                                \"tag\": \"link\",\n                                \"attr\": {\n                                    \"rel\": \"stylesheet\",\n                                    \"href\": \"theme.css\"\n                                }\n                            },\n                            {\n                                \"tag\": \"meta\",\n                                \"attr\": {\n                                    \"name\": \"author\",\n                                    \"content\": [\n                                        \"Juan\",\n                                        \"de\",\n                                        \"Filadelfia\"\n                                    ]\n                                }\n                            },\n                            {\n                                \"tag\": \"meta\",\n                                \"attr\": {\n                                    \"name\": \"keywords\",\n                                    \"content\": [\n                                        \"html,\",\n                                        \"javascript,\",\n                                        \"css\"\n                                    ]\n                                }\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"h2\"\n                            },\n                            {\n                                \"tag\": \"img\",\n                                \"attr\": {\n                                    \"src\": \"imagenes/jardines/img1.png\",\n                                    \"alt\": \"flor1\",\n                                    \"height\": \"60\"\n                                }\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"a\",\n                                \"attr\": {\n                                    \"href\": \"jardineria\"\n                                }\n                            },\n                            {\n                                \"tag\": \"p\"\n                            },\n                            {\n                                \"tag\": \"a\",\n                                \"attr\": {\n                                    \"href\": \"herboterapia\"\n                                }\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VS_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "32c129ad-e809-4997-b762-a7924de68383",
+						"exec": [
+							"pm.test(\"Valid HTML\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.isHtmlValid).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlContent\": \"PCFkb2N0eXBlIGh0bWw+CiAKPGh0bWw+CiA8aGVhZD4KPHRpdGxlPlTDrXR1bG8gZGUgbGEgcMOhZ2luYTwvdGl0bGU+CiAgIAk8bWV0YSBuYW1lPSJhdXRob3IiIGNvbnRlbnQ9IkpvaG4gRG9lIj4KPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdHlsZS5jc3MiPgogPC9oZWFkPgogCiA8Ym9keT4KICAgPGgxPk1hcGEgZGVsIHNpdGlvPC9oMT4KICAgPHRhYmxlPgoJPHRoZWFkPgo8dHI+Cgk8dGg+U2VjY2nDs248L3RoPgoJPHRoPlVSTDwvdGg+Cjx0cj4KPC90aGVhZD4KICAgICA8dGJvZHk+CiAgICAgICA8dHI+CiAgICAgICAgIDx0ZD5Ib21lPC90ZD4KICAgICAgICAgPHRkPjxhIGhyZWY9J2hvbWUnPmh0dHA6Ly93d3cubWlwYWdpbmEuY29tL2hvbWU8L3RkPgogICAgICAgPC90cj4KICAgICAgIDx0cj4KICAgICAgICAgPHRkPkJsb2c8L3RkPgogICAgICAgICA8dGQ+PGEgaHJlZj0nYmxvZyc+aHR0cDovL3d3dy5taXBhZ2luYS5jb20vYmxvZzwvdGQ+CiAgICAgICA8L3RyPgogICAgICAgPHRyPgogICAgICAgICA8dGQ+R2FsZXLDrWE8L3RkPgogICAgICAgICA8dGQ+PGEgaHJlZj0nZ2FsZXJpYSc+aHR0cDovL3d3dy5taXBhZ2luYS5jb20vZ2FsZXJpYTwvdGQ+CiAgICAgICA8L3RyPgogICAgIDwvdGJvZHk+CiAgIDwvdGFibGU+CiAgIDxoMT5Cw7pzcXVlZGE8L2gxPgogICA8Zm9ybT4KICAgICA8bGFiZWwgZm9yPSJwY2xhdmUiPkJ1c2NhciBwb3IgcGFsYWJyYSBjbGF2ZTo8L2xhYmVsPgogICAgIDxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0icGNsYXZlIj48YnI+PGJyPgogICAgIDxsYWJlbCBmb3I9ImF1dG9yIj5CdXNjYXIgcG9yIGF1dG9yOjwvbGFiZWw+CiAgICAgPGlucHV0IHR5cGU9InRleHQiIGlkPSJhdXRvciI+PGJyPjxicj4KICAgICA8aW5wdXQgdHlwZT0icmVzZXQiIHZhbHVlPSJSZXN0YWJsZWNlciI+CiAgICAgPGlucHV0IHR5cGU9InN1Ym1pdCIgdmFsdWU9IkJ1c2NhciI+CiAgIDwvZm9ybT4KIDwvYm9keT4KPC9odG1sPg==\",\n    \"htmlStructure\": {\n        \"node\": \"root\",\n        \"children\": [\n            {\n                \"tag\": \"html\",\n                \"children\": [\n                    {\n                        \"tag\": \"head\",\n                        \"children\": [\n                            {\n                                \"tag\": \"title\"\n                            },\n                            {\n                                \"tag\": \"meta\",\n                                \"attr\": {\n                                    \"name\": \"author\",\n                                    \"content\": [\n                                        \"John\",\n                                        \"Doe\"\n                                    ]\n                                }\n                            },\n                            {\n                                \"tag\": \"link\",\n                                \"attr\": {\n                                    \"rel\": \"stylesheet\",\n                                    \"href\": \"style.css\"\n                                }\n                            }\n                        ]\n                    },\n                    {\n                        \"tag\": \"body\",\n                        \"children\": [\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"table\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"thead\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"tr\",\n                                                \"children\": [\n                                                    {\n                                                        \"tag\": \"th\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"th\"\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"tag\": \"tr\"\n                                            }\n                                        ]\n                                    },\n                                    {\n                                        \"tag\": \"tbody\",\n                                        \"children\": [\n                                            {\n                                                \"tag\": \"tr\",\n                                                \"children\": [\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\",\n                                                        \"children\": [\n                                                            {\n                                                                \"tag\": \"a\",\n                                                                \"attr\": {\n                                                                    \"href\": \"home\"\n                                                                }\n                                                            }\n                                                        ]\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"tag\": \"tr\",\n                                                \"children\": [\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\",\n                                                        \"children\": [\n                                                            {\n                                                                \"tag\": \"a\",\n                                                                \"attr\": {\n                                                                    \"href\": \"blog\"\n                                                                }\n                                                            }\n                                                        ]\n                                                    }\n                                                ]\n                                            },\n                                            {\n                                                \"tag\": \"tr\",\n                                                \"children\": [\n                                                    {\n                                                        \"tag\": \"td\"\n                                                    },\n                                                    {\n                                                        \"tag\": \"td\",\n                                                        \"children\": [\n                                                            {\n                                                                \"tag\": \"a\",\n                                                                \"attr\": {\n                                                                    \"href\": \"galeria\"\n                                                                }\n                                                            }\n                                                        ]\n                                                    }\n                                                ]\n                                            }\n                                        ]\n                                    }\n                                ]\n                            },\n                            {\n                                \"tag\": \"h1\"\n                            },\n                            {\n                                \"tag\": \"form\",\n                                \"children\": [\n                                    {\n                                        \"tag\": \"label\",\n                                        \"attr\": {\n                                            \"for\": \"pclave\"\n                                        }\n                                    },\n                                    {\n                                        \"tag\": \"input\",\n                                        \"attr\": {\n                                            \"type\": \"text\",\n                                            \"id\": \"pclave\"\n                                        }\n                                    },\n                                    {\n                                        \"tag\": \"br\"\n                                    },\n                                    {\n                                        \"tag\": \"br\"\n                                    },\n                                    {\n                                        \"tag\": \"label\",\n                                        \"attr\": {\n                                            \"for\": \"autor\"\n                                        }\n                                    },\n                                    {\n                                        \"tag\": \"input\",\n                                        \"attr\": {\n                                            \"type\": \"text\",\n                                            \"id\": \"autor\"\n                                        }\n                                    },\n                                    {\n                                        \"tag\": \"br\"\n                                    },\n                                    {\n                                        \"tag\": \"br\"\n                                    },\n                                    {\n                                        \"tag\": \"input\",\n                                        \"attr\": {\n                                            \"type\": \"reset\",\n                                            \"value\": \"Restablecer\"\n                                        }\n                                    },\n                                    {\n                                        \"tag\": \"input\",\n                                        \"attr\": {\n                                            \"type\": \"submit\",\n                                            \"value\": \"Buscar\"\n                                        }\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    },\n    \"cssContent\": \"\",\n    \"cssStructure\": {}\n}",
 					"options": {
 						"raw": {
 							"language": "json"

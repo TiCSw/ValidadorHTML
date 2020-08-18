@@ -1,0 +1,82 @@
+{
+  "htmlStructure": {
+    "node": "root",
+    "children": [
+      {
+        "tag": "html",
+        "children": [
+          {
+            "tag": "head",
+            "children": [
+              {
+                "tag": "link",
+                "attr": {
+                  "rel": "stylesheet",
+                  "href": "style.css"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "body",
+            "children": [
+              {
+                "tag": "h1"
+              },
+              {
+                "tag": "p"
+              },
+              {
+                "tag": "h2"
+              },
+              {
+                "tag": "ol",
+                "attr": {
+                  "reversed": "true"
+                },
+                "children": [
+                  {
+                    "tag": "li"
+                  },
+                  {
+                    "tag": "li"
+                  },
+                  {
+                    "tag": "li"
+                  }
+                ]
+              },
+              {
+                "tag": "h2"
+              },
+              {
+                "tag": "dl",
+                "children": [
+                  {
+                    "tag": "dt"
+                  },
+                  {
+                    "tag": "dd"
+                  },
+                  {
+                    "tag": "dt"
+                  },
+                  {
+                    "tag": "dd"
+                  },
+                  {
+                    "tag": "dt"
+                  },
+                  {
+                    "tag": "dd"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cssStructure": {}
+}
