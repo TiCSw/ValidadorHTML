@@ -24,6 +24,7 @@ router.post("/", (req, res) => {
 
       let keyBuffer = Buffer.from(key, "base64").toString();
       const { lis_outcome_service_url, lis_result_sourcedid } = JSON.parse(keyBuffer);
+      console.log(result.grade);
       /*lti
         .sendResultToCoursera(lis_outcome_service_url, lis_result_sourcedid, parseFloat(result.grade))
         .then((res) => {})
