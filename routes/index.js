@@ -20,13 +20,11 @@ router.post("/", (req, res) => {
 
 
   const result = domValidation(htmlBuffer, cssBuffer, htmlStructure, cssStructure);
-    if(req.cookies['AccessToken']=='***Auth token value***'){
+      if(req.cookies['AccessToken']=='***Auth token value***'){
       if (key) {
         
-  
-        let keyBuffer = Buffer.from(key, "base64").toString();
-        const { lis_outcome_service_url, lis_result_sourcedid } = JSON.parse(keyBuffer);
-        console.log(result.grade);
+        let keyBuffer = Buffer.from(decodeURIComponent(key), "base64").toString();
+	const { lis_outcome_service_url, lis_result_sourcedid } = JSON.parse(keyBuffer);
         lti
           .sendResultToCoursera(lis_outcome_service_url, lis_result_sourcedid, parseFloat(result.grade)/5.0)
           .then((res) => {})
@@ -69,7 +67,7 @@ router.post("/lti_access", function (req, res, next) {
       const { lis_outcome_service_url, lis_result_sourcedid } = resp;
       let key = { lis_outcome_service_url, lis_result_sourcedid };
       let buffer = Buffer.from(JSON.stringify(key)).toString("base64");
-      res.redirect(`/?type=${resp.type}&exercise=${resp.exercise}&key=${buffer}`);
+      res.redirect(`/?type=${resp.type}&exercise=${resp.exercise}&key=${encodeURIComponent(buffer)}`);
     })
     .catch(next);
 });
