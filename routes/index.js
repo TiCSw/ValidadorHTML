@@ -18,21 +18,22 @@ router.post("/", (req, res) => {
   let cssBuffer = Buffer.from(cssContent, "base64");
   
 
-  if(req.cookies['AccessToken']=='***Auth token value***'){
-    if (key) {
-      
 
-      let keyBuffer = Buffer.from(key, "base64").toString();
-      const { lis_outcome_service_url, lis_result_sourcedid } = JSON.parse(keyBuffer);
-      /*lti
-        .sendResultToCoursera(lis_outcome_service_url, lis_result_sourcedid, parseFloat(result.grade))
-        .then((res) => {})
-        .catch((error) => {
-          console.log("Error when sending results to Coursera: ", error);
-        });*/
-    }
-    const result = domValidation(htmlBuffer, cssBuffer, htmlStructure, cssStructure);
+  const result = domValidation(htmlBuffer, cssBuffer, htmlStructure, cssStructure);
+      if(req.cookies['AccessToken']=='***Auth token value***'){
+      if (key) {
+        
+        let keyBuffer = Buffer.from(decodeURIComponent(key), "base64").toString();
+	const { lis_outcome_service_url, lis_result_sourcedid } = JSON.parse(keyBuffer);
+        lti
+          .sendResultToCoursera(lis_outcome_service_url, lis_result_sourcedid, parseFloat(result.grade)/5.0)
+          .then((res) => {})
+          .catch((error) => {
+            console.log("Error when sending results to Coursera: ", error);
+          });
+      }
     res.json(result);
+    
 }
 else
 {
@@ -66,7 +67,7 @@ router.post("/lti_access", function (req, res, next) {
       const { lis_outcome_service_url, lis_result_sourcedid } = resp;
       let key = { lis_outcome_service_url, lis_result_sourcedid };
       let buffer = Buffer.from(JSON.stringify(key)).toString("base64");
-      res.redirect(`/?type=${resp.type}&exercise=${resp.exercise}&key=${buffer}`);
+      res.redirect(`/?type=${resp.type}&exercise=${resp.exercise}&key=${encodeURIComponent(buffer)}`);
     })
     .catch(next);
 });
