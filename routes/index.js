@@ -25,11 +25,12 @@ router.post("/", (req, res) => {
         
         let keyBuffer = Buffer.from(decodeURIComponent(key), "base64").toString();
   const { lis_outcome_service_url, lis_result_sourcedid } = JSON.parse(keyBuffer);
-  console.log("Validating");
+        console.log("Validating");
         lti
           .sendResultToCoursera(lis_outcome_service_url, lis_result_sourcedid, parseFloat(result.grade)/5.0)
           .then((res) => {})
           .catch((error) => {
+            console.log(result.grade/5.0);
             console.log("Error when sending results to Coursera: ", error);
           });
       }
