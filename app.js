@@ -11,7 +11,7 @@ var indexRouter = require("./routes/index");
 
 var app = express();
 app.use(cors());
-
+app.enable('trust proxy');
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
