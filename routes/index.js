@@ -28,7 +28,7 @@ router.post("/", (req, res) => {
         console.log("Validating");
         lti
           .sendResultToCoursera(lis_outcome_service_url, lis_result_sourcedid, parseFloat(result.grade)/5.0)
-          .then((res) => {})
+          .then((res) => {console.log(res)})
           .catch((error) => {
             console.log(result.grade/5.0);
             console.log("Error when sending results to Coursera: ", error);
