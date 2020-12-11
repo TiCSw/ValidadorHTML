@@ -70,7 +70,7 @@
                               {
                                 "tag": "a",
                                 "attr": {
-                                  "href": "home"
+                                  "href": "http://www.mipagina.com/home"
                                 }
                               }
                             ]
@@ -89,7 +89,7 @@
                               {
                                 "tag": "a",
                                 "attr": {
-                                  "href": "blog"
+                                  "href": "http://www.mipagina.com/blog"
                                 }
                               }
                             ]
@@ -108,7 +108,7 @@
                               {
                                 "tag": "a",
                                 "attr": {
-                                  "href": "galeria"
+                                  "href": "http://www.mipagina.com/galeria"
                                 }
                               }
                             ]
@@ -139,12 +139,6 @@
                     }
                   },
                   {
-                    "tag": "br"
-                  },
-                  {
-                    "tag": "br"
-                  },
-                  {
                     "tag": "label",
                     "attr": {
                       "for": "autor"
@@ -156,12 +150,6 @@
                       "type": "text",
                       "id": "autor"
                     }
-                  },
-                  {
-                    "tag": "br"
-                  },
-                  {
-                    "tag": "br"
                   },
                   {
                     "tag": "input",
