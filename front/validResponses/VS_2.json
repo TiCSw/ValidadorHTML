@@ -126,44 +126,59 @@
                 "tag": "form",
                 "children": [
                   {
-                    "tag": "label",
-                    "attr": {
-                      "for": "pclave"
-                    }
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "pclave"
+                        }
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "text",
+                          "id": "pclave"
+                        }
+                      }
+                    ]
                   },
                   {
-                    "tag": "input",
-                    "attr": {
-                      "type": "text",
-                      "id": "pclave"
-                    }
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "attr": {
+                          "for": "autor"
+                        }
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "text",
+                          "id": "autor"
+                        }
+                      }
+                    ]
                   },
                   {
-                    "tag": "label",
-                    "attr": {
-                      "for": "autor"
-                    }
-                  },
-                  {
-                    "tag": "input",
-                    "attr": {
-                      "type": "text",
-                      "id": "autor"
-                    }
-                  },
-                  {
-                    "tag": "input",
-                    "attr": {
-                      "type": "reset",
-                      "value": "Restablecer"
-                    }
-                  },
-                  {
-                    "tag": "input",
-                    "attr": {
-                      "type": "submit",
-                      "value": "Buscar"
-                    }
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "reset",
+                          "value": "Restablecer"
+                        }
+                      },
+                      {
+                        "tag": "input",
+                        "attr": {
+                          "type": "submit",
+                          "value": "Buscar"
+                        }
+                      }
+                    ]
                   }
                 ]
               }
