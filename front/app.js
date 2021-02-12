@@ -70,7 +70,7 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
         cssStructure: data.cssStructure,
         key,
       };
-      fetch("http://157.253.238.65:8000", {
+      fetch("http://localhost:8000", {
         method: "POST",
         body: JSON.stringify(payload),
         headers: {
