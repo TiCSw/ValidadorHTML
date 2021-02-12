@@ -30,10 +30,10 @@
     <title>HTML Validator</title>
   </head>
   <body>
-    <div className="container" style="text-align: center;">
+    <div className="container" style="text-align: center">
       <div
         class="site-width layout horizontal"
-        style="text-align: center; max-width: 100%; background-color: #1c1c1a;"
+        style="text-align: center; max-width: 100%; background-color: #1c1c1a"
       >
         <img
           src="logo.png"
@@ -84,10 +84,12 @@
           <p id="structureResult-html"></p>
         </div>
         <div id="details-html">
-          <h4>Estructura proporcionada</h4>
-          <div id="source"></div>
-          <h4>Estructura esperada</h4>
-          <div id="target"></div>
+          <div id="well-formed">
+            <h4>Estructura proporcionada</h4>
+            <div id="source"></div>
+            <h4>Estructura esperada</h4>
+            <div id="target"></div>
+          </div>
           <div id="errors-html" hidden>
             <h4>Detalle de los errores</h4>
             <div class="text-left">
@@ -95,9 +97,10 @@
             </div>
             <form>
               <p>
-                Para intentar nuevamente, ingrese de nuevo a la actividad desde el curso en Coursera.
+                Para intentar nuevamente, ingrese de nuevo a la actividad desde
+                el curso en Coursera.
               </p>
-              <input type="submit" value="Reenviar" id="retry" disabled>
+              <input type="submit" value="Reenviar" id="retry" disabled />
             </form>
           </div>
         </div>
@@ -122,7 +125,7 @@
         <div class="row-fluid" id="footer">
           <div id="sp-footer1" class="span12">
             <div class="custom">
-              <div class="footer" style="text-align: center;">
+              <div class="footer" style="text-align: center">
                 <div id="websis-icon" class="social-icons">
                   <ul class="websis">
                     <ul class="GENERAL">
@@ -196,7 +199,7 @@
               </div>
               <br />
 
-              <div style="text-align: center;">
+              <div style="text-align: center">
                 <a href="https://apoyofinanciero.uniandes.edu.co/"
                   >Apoyo Financiero</a
                 >
@@ -234,6 +237,7 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="tree.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
