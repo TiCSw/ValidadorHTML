@@ -15,11 +15,6 @@ function initializeDivs() {
   document.getElementById("general-errors").hidden = true;
 }
 
-document.getElementById("retry").onclick = function (event) {
-  event.preventDefault();
-  window.location.href = `/?type=${type}&exercise=${exercise}&key=${key}`;
-};
-
 document.getElementById("fileForm").onchange = function (event) {
   event.preventDefault();
   if (type === "1" && document.getElementById("fileHTML").files.length > 0)
