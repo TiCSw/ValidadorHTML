@@ -75,7 +75,6 @@
           </div>
         </form>
       </div>
-
       <hr />
       <div id="general-errors" class="text-danger"></div>
 
@@ -85,16 +84,24 @@
           <p id="structureResult-html"></p>
         </div>
         <div id="details-html">
-          <h4>Estructura proporcionada</h4>
-          <div id="source"></div>
-          <h4>Estructura esperada</h4>
-          <div id="target"></div>
+          <div id="well-formed">
+            <h4>Estructura proporcionada</h4>
+            <div id="source"></div>
+            <h4>Estructura esperada</h4>
+            <div id="target"></div>
+          </div>
           <div id="errors-html" hidden>
             <h4>Detalle de los errores</h4>
             <div class="text-left">
               <ul id="errors-html-list"></ul>
             </div>
-            <div><p>Para intentar nuevamente, ingrese de nuevo a la actividad desde el curso en Coursera.</p></div>
+            <form>
+              <p>
+                Para intentar nuevamente, ingrese de nuevo a la actividad desde
+                el curso en Coursera.
+              </p>
+              <input type="submit" value="Reenviar" id="retry" disabled />
+            </form>
           </div>
         </div>
       </div>
@@ -230,6 +237,7 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="tree.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
