@@ -137,6 +137,11 @@ function renderResponse(
       document.getElementById("well-formed").hidden = true;
       document.getElementById("errors-html-list").innerHTML =
         "<p>El archivo proporcionado no es un documento HTML válido.</p>";
+      document.getElementById(
+        "errors-html-list"
+      ).innerHTML += differencesHTML
+        .map((e) => `<li>${e.value} </li>`)
+        .join("");
     } else {
       document.getElementById(
         "structureResult-html"
