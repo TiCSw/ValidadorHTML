@@ -32,7 +32,7 @@ h2 {
   width: 100%;
   padding-bottom: 100%; /* aspect ratio */
   vertical-align: top;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .svg-content-responsive {
   display: inline-block;
@@ -45,4 +45,8 @@ svg .rect {
   fill: gold;
   stroke: steelblue;
   stroke-width: 5px;
+}
+
+svg {
+  overflow-x: scroll;
 }
