@@ -37,7 +37,7 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
         cssStructure: data.cssStructure,
         key,
       };
-      fetch("http://localhost:8000/", {
+      fetch("http://localhost:8000", {
         method: "POST",
         body: JSON.stringify(payload),
         headers: {
@@ -128,9 +128,7 @@ function renderResponse(
       document.getElementById("well-formed").hidden = true;
       document.getElementById("errors-html-list").innerHTML =
         "<p>El archivo proporcionado no es un documento HTML válido.</p>";
-      document.getElementById(
-        "errors-html-list"
-      ).innerHTML += differencesHTML
+      document.getElementById("errors-html-list").innerHTML += differencesHTML
         .map((e) => `<li>${e.value} </li>`)
         .join("");
     } else {
@@ -139,9 +137,7 @@ function renderResponse(
       ).innerHTML = `<p>La estructura del archivo html proporcionado no es válida</p><p>Nota: ${grade}</p>`;
       document.getElementById("structureResult-html").className = "text-danger";
 
-      document.getElementById(
-        "errors-html-list"
-      ).innerHTML = differencesHTML
+      document.getElementById("errors-html-list").innerHTML = differencesHTML
         .map((e) => `<li>${e.message} ${e.value} </li>`)
         .join("");
     }
