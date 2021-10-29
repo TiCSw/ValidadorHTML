@@ -59,7 +59,6 @@ router.post("/", (req, res) => {
           console.log("Error when sending results to Coursera: ", error);
         });
     }
-    console.log("HERE")
     res.json(result);
   } else {
     
