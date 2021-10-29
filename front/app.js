@@ -46,6 +46,7 @@ function processFiles(selectedHTMLFile, selectedCSSFile) {
       })
         .then((res) => res.json())
         .catch((error) => {
+          
           document.getElementById("general-errors").hidden = false;
           document.getElementById("general-errors").innerHTML = `
             <p>

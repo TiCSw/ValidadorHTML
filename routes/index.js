@@ -25,19 +25,25 @@ router.post("/test", (req, res) => {
 });
 
 router.post("/", (req, res) => {
+  
   const result = validate(req);
-
+  
   res.cookie("AccessToken", "***Auth token value***", {
     httpOnly: true,
     expires: 0,
   });
 
+  key = req.body['key']
   if (req.cookies["AccessToken"] == "***Auth token value***") {
+
     if (key) {
+      
       let keyBuffer = Buffer.from(decodeURIComponent(key), "base64").toString();
+      
       const { lis_outcome_service_url, lis_result_sourcedid } = JSON.parse(
         keyBuffer
       );
+      
       console.log("Validating");
       lti
         .sendResultToCoursera(
@@ -53,8 +59,10 @@ router.post("/", (req, res) => {
           console.log("Error when sending results to Coursera: ", error);
         });
     }
+    console.log("HERE")
     res.json(result);
   } else {
+    
     res.status(401).send();
   }
 });
